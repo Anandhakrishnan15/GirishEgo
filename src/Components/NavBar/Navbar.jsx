@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css';
-import {Link, NavLink} from 'react-router';
+import {Link, NavLink, useLocation} from 'react-router';
 import Products from '../Pages/ProductPage/Products';
+import Res_Support from "../Pages/ResourcesPage/Res_Support"
 
 const Navbar = () => {
   // const [scrollData, setscrollData] = useState({ y: 0, lastY: 1 });
@@ -9,67 +10,74 @@ const Navbar = () => {
   const [navBarVisable, setNavbarvisible] = useState(true);
   // if it ture then show navbr else hide helps tom change the css property
   const [dropdown, setDropdown] = useState(false);
+  const [resdropdown, setResDropdown] = useState(false);
   // if the screen is in resopnive for the hammenu
   const [hamenuon, setHammenuon] = useState(false);
 
   // const [resOn,setResOn]= useState(false)
 
   const [visibleSubProducts, setVisibleSubProducts] = useState({}); // Track visibility for each product
-  // useEffect(() => {
-  //   const handelScrolldata = () => {
-  //     //function which will update the scroll movementn and give it to the setscrollData state
-  //     setscrollData((prevState) => {
-  //       return {
-  //         y: window.scrollY,
-  //         lastY: prevState.y,
-  //       };
-  //     });
-  //   };
-  //   window.addEventListener("scroll", handelScrolldata);
-  //   return () => {
-  //     // cleanup function
-  //     window.removeEventListener("scroll", handelScrolldata);
-  //   };
-  // }, []);
+  const location = useLocation();
 
-  //   useEffect(() => {
-  //     // over her we will use the conditonal operations and change the navbarvisibe
-  //     // console.log(scrollData);
-  //     if (scrollData.y > 20) {
-  //       setNavbarvisible(false);
-  //     } else {
-  //       setNavbarvisible(true);
-  //     }
-  //     if (scrollData.y < scrollData.lastY) {
-  //       // here if the last postion of the scroll is larger then hide
-  //       setNavbarvisible(true);
-  //       //if the user scroll back to then the the scroll bar will pop u again.
-  //     } else {
-  //       setNavbarvisible(false);
-  //       // and hide if the user scrolls down back again
-  //     }
-  // // this will make the dropdown disaper if the user scroll while the drop down was active
-  //     setDropdown(false);
-  //      setHammenuon(false)
+  // Check if the current route includes "/Products"
+  const isActive =location.pathname.includes("/Products");
+  const resisActive = location.pathname.includes("/Resources");
 
-  //     // update evertime the scrollData changes
-  //   }, [scrollData]);
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        setHammenuon(false);
-      }   
-    };
+      // useEffect(() => {
+      //   const handelScrolldata = () => {
+      //     //function which will update the scroll movementn and give it to the setscrollData state
+      //     setscrollData((prevState) => {
+      //       return {
+      //         y: window.scrollY,
+      //         lastY: prevState.y,
+      //       };
+      //     });
+      //   };
+      //   window.addEventListener("scroll", handelScrolldata);
+      //   return () => {
+      //     // cleanup function
+      //     window.removeEventListener("scroll", handelScrolldata);
+      //   };
+      // }, []);
 
-    window.addEventListener("resize", handleResize);
+      //   useEffect(() => {
+      //     // over her we will use the conditonal operations and change the navbarvisibe
+      //     // console.log(scrollData);
+      //     if (scrollData.y > 20) {
+      //       setNavbarvisible(false);
+      //     } else {
+      //       setNavbarvisible(true);
+      //     }
+      //     if (scrollData.y < scrollData.lastY) {
+      //       // here if the last postion of the scroll is larger then hide
+      //       setNavbarvisible(true);
+      //       //if the user scroll back to then the the scroll bar will pop u again.
+      //     } else {
+      //       setNavbarvisible(false);
+      //       // and hide if the user scrolls down back again
+      //     }
+      // // this will make the dropdown disaper if the user scroll while the drop down was active
+      //     setDropdown(false);
+      //      setHammenuon(false)
 
-    // Initial check in case the component is mounted after a resize
-    handleResize();
+      //     // update evertime the scrollData changes
+      //   }, [scrollData]);
+      useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth >= 768) {
+            setHammenuon(false);
+          }
+        };
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+        window.addEventListener("resize", handleResize);
+
+        // Initial check in case the component is mounted after a resize
+        handleResize();
+
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
 
   const toggleSubProductVisibility = (productId) => {
     setVisibleSubProducts((prev) => ({
@@ -78,9 +86,9 @@ const Navbar = () => {
     }));
   };
 
-
   const handleLinkClick = () => {
     setDropdown(false);
+    setResDropdown(false);
     setHammenuon(false);
     setVisibleSubProducts({}); // Close all sub-products on link click
   };
@@ -105,11 +113,11 @@ const Navbar = () => {
       </div>
       <div className="icons">
         <ul className={hamenuon ? "open-hamListcontainer" : "navlistcontainer"}>
+          <div className="sidebarLogo">
+            <h3>Logo</h3>
+          </div>
           {hamenuon ? (
             <div>
-              <div>
-                <h3>Logo</h3>
-              </div>
               <div
                 className="closeButton"
                 onClick={() => {
@@ -128,6 +136,7 @@ const Navbar = () => {
           <NavLink to="About-us" onClick={handleLinkClick}>
             <li>About Us</li>
           </NavLink>
+
           {/* the dropdown of the products starts*/}
           <li
             className="dropdown"
@@ -135,10 +144,13 @@ const Navbar = () => {
             onMouseLeave={() => setDropdown(false)}
           >
             <span
-              className="product-dropdown-container"
+              //
+              className={`product-dropdown-container ${
+                isActive ? "active" : ""
+              }`}
               onClick={() => setDropdown(!dropdown)}
             >
-              Products{" "}
+              Products
               <span
                 className={`productDropDownArrow ${
                   dropdown ? "arrowrotate" : ""
@@ -146,9 +158,7 @@ const Navbar = () => {
               ></span>
             </span>
             {dropdown && (
-              <ul
-                className={`dropdown-menu ${dropdown ? "active" : ""}`}
-              >
+              <ul className={`dropdown-menu ${dropdown ? "active" : ""}`}>
                 {Products.map((product) => (
                   <li key={product.id} className="dropdown-item">
                     {!hamenuon ? (
@@ -162,7 +172,9 @@ const Navbar = () => {
                     ) : (
                       <h3
                         onClick={() => toggleSubProductVisibility(product.id)}
-                        style={{ cursor: "pointer" }}
+                        style={{ cursor: "pointer", borderBottom: "1px solid gray",
+                          borderTop: "1px soild gray",
+                          padding: "10px", }}
                       >
                         {product.name}
                       </h3>
@@ -190,11 +202,60 @@ const Navbar = () => {
             )}
           </li>
           {/* dropdowm Ends */}
+          {/* the resdropdown of the products starts*/}
+          <li
+            className="dropdown"
+            onMouseEnter={() => setResDropdown(true)}
+            onMouseLeave={() => setResDropdown(false)}
+          >
+            <span
+              className={`product-dropdown-container ${
+                resisActive ? "active" : ""
+              }`}
+              onClick={() => setResDropdown(!resdropdown)}
+            >
+              Resources/Support
+              <span
+                className={`resorceDropDownArrow ${
+                  resdropdown ? "resarrowrotate" : ""
+                }`}
+              ></span>
+            </span>
+            {resdropdown && (
+              <ul
+                className={`resdropdown-menu ${
+                  resdropdown ? "res-active" : ""
+                }`}
+              >
+                {Res_Support.map((reso) => (
+                  <li
+                    style={{
+                      borderBottom: "1px solid gray",
+                      borderTop: "1px soild gray",
+                      padding: "10px",
+                    }}
+                    key={reso.id}
+                    className="resdropdown-item"
+                  >
+                    <NavLink
+                      to={`/Resources`}
+                      onClick={handleLinkClick}
+                      style={{ cursor: "pointer" }}
+                    >
+                      <h3>{reso.name}</h3>
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+          {/* dropdowm Ends */}
+
+          {/* <NavLink to="/Resources" onClick={handleLinkClick}>
+            <li>Resources/Support</li>
+          </NavLink> */}
           <NavLink to="/Contact-us" onClick={handleLinkClick}>
             <li>Contact us</li>
-          </NavLink>
-          <NavLink to="/Resources" onClick={handleLinkClick}>
-            <li>Resources</li>
           </NavLink>
         </ul>
       </div>
