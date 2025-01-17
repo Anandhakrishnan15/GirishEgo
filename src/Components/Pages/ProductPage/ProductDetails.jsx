@@ -25,27 +25,30 @@ const ProductDetails = () => {
   }, [subProductId]);
 
   return (
-    <div>
-      <h1>Product Details</h1>
-      <div>
-        <h1>{product.name}</h1>
-      </div>
-      {product.subProducts.map((info) => (
-        <>
-          <div
-            className="Product-info-key"
-            key={info.id}
-            ref={(el) => (productRefs.current[info.id] = el)} // Assign refs dynamically
-            id={info.id}
-          >
-            <h1>{info.name}</h1>
-            <p>{info.productApplication}</p>
-            <p>{info.productInfo}</p>
-          </div>
-        </>
-      ))}
-      ;
-    </div>
+    <>
+      <h1>Product Pages</h1>
+    </>
+    // <div>
+    //   <h1>Product Details</h1>
+    //   <div>
+    //     <h1>{product.name}</h1>
+    //   </div>
+    //   {product.subProducts.map((info) => (
+    //     <>
+    //       <div
+    //         className="Product-info-key"
+    //         key={info.id}
+    //         ref={(el) => (productRefs.current[info.id] = el)} // Assign refs dynamically
+    //         id={info.id}
+    //       >
+    //         <h1>{info.name}</h1>
+    //         <p>{info.productApplication}</p>
+    //         <p>{info.productInfo}</p>
+    //       </div>
+    //     </>
+    //   ))}
+    //   ;
+    // </div>
   );
 };
 

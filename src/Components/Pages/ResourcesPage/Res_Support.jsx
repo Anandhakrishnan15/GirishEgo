@@ -1,5 +1,5 @@
 const Res_Support = [
-  { id: "powercalcualtion", name: "powercalcualtion" },
+  { id: "powercalcualtion", name: "power calcualtion" },
   { id: "application", name: "application" },
   { id: "download", name: "download" },
 ];

@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <div>
       <h1>homepage</h1>
-      <Carousel />
-      <div
+      {/* <Carousel /> */}
+      {/* <div
         className="ProductCArdContainer"
         style={{
           display: "flex",
@@ -37,7 +37,7 @@ const Home = () => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
