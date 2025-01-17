@@ -1,0 +1,320 @@
+.navbar {
+  color: rgb(0, 0, 0);
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  display: flex; /* For justify-between */
+  justify-content: space-between;
+  position: sticky; /* For sticky */
+  top: 0; /* For top-0 */
+  background-color: rgb(255, 255, 255); /* For bg-black */
+  opacity: 0; /* For opacity-0 */
+  transition: opacity 0.5s ease-in-out; /* For transition-opacity duration-500 ease-in-out */
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;;
+}
+.show {
+  opacity: 1; /* For opacity-100 */
+  transition: opacity 0.7s ease-in-out;
+}
+.logo {
+  /* border: 1px solid red; */
+ 
+  width: 239px; /* Adjust size as needed */
+  object-fit:fill; /* Ensures the aspect ratio is preserved */
+
+  img{
+    width:100%;
+  }
+}
+.navlistcontainer li {
+ padding: 10px;
+ list-style: none;
+
+ /* border-bottom: 1px solid whitesmoke; */
+}
+
+.navlistcontainer {
+  display: flex;
+} 
+.navlistcontainer.active{
+  color: #7fd4ff;
+}
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.dropdown-Container {
+  width: 100%;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.dropdown-menu{
+  position: absolute;
+  width: 750px;
+  right: 0;
+  top: 48px;
+  background-color:RGB(240, 240, 240);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 500px; /* Collapsed by default */
+ border: none;
+  transition: max-height 2s ease, opacity 2s ease;
+  h3{
+    color: RGB(15, 100, 174);
+  }
+  
+}
+
+.dropdown-menu:before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 95%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #020202 transparent;
+  
+}
+.dropdown-menu .dropdown-item {
+  margin-bottom: 1px;
+  width: 140px;
+  border: none;
+}
+
+.sub-dropdown-menu {
+  display: flex;
+  color: aliceblue;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 5px;
+   transition: max-height 0.5s ease, opacity 0.5s ease;
+   max-height:200; /* Collapsed by default */
+  opacity: 1;
+   
+}
+.sub-dropdown-menu.visible {
+  display: flex;
+  max-height: 200px; /* Adjust based on content */
+  opacity: 1;
+}
+
+.sub-dropdown-menu li{
+    margin: 2px;
+    padding: 5px;
+    a{
+        color:RGB(50, 50, 50);
+    }
+}
+
+.sub-dropdown-menu li a:hover{
+  color:RGB(15, 100, 174);
+  transition: ease-in;
+}
+ nav .ham-menu{
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+
+ }
+ .sidebarLogo{
+  display: none;
+ }
+ .ham-menu span{
+  height: 10px;
+  width: 100%;
+  background-color: rgb(15, 100, 174);
+  border-radius: 10px;
+ }
+
+ .productDropDownArrow{
+    content: "";
+    margin-left:10px;
+    position: relative;
+transition: all 0.5s ease;
+    border-width: 0 7px 7px 7px;
+    border-style: solid;
+    border-color: transparent transparent #111 transparent
+ }
+ .arrowrotate,.resarrowrotate{
+transform: rotate(180deg);
+ }
+ .product-dropdown-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+ }
+  .open-hamListcontainer{
+    display: flex;
+    position: absolute;
+  height: 100vh;
+    flex-direction: column;
+    top: 0px;
+    right: 0px;
+    width: 70%;
+    background-color: rgb(10, 16, 59);
+    transition: right 1s ease;
+  }
+/* resources and support */
+
+ .reso-dropdown-container{
+  display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+ }
+ .resorceDropDownArrow {
+  content: "";
+    margin-left: 10px;
+    position: relative;
+    transition: all 0.5s ease;
+    border-width: 0 7px 7px 7px;
+    border-style: solid;
+    border-color: transparent transparent #111 transparent;
+ }
+ .resdropdown-menu{
+  display: flex;
+ }
+ .resdropdown-menu {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    background-color:hsl(0, 0%, 0%);
+    li:hover{
+    background-color:#029eff;
+    h3{
+      color: rgb(255, 255, 255);
+    }
+    
+  }
+  }
+
+.resdropdown-item{
+  
+  h3{
+    color:  RGB(15, 100, 174);
+    padding: 10px;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+}
+
+
+ /**/
+ @media (max-width:768px) {
+  nav .ham-menu{
+    display: flex;
+  }
+
+  .navlistcontainer{
+     display: flex;
+  position: fixed;
+  height: 100vh;
+    flex-direction: column;
+    top: 0px;
+    right: -700px;
+    width: 70%;
+    background-color: rgb(10, 16, 59) ;
+    transition: right 0.5s ease;
+  
+  }
+  .closeButton{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    color: red;
+    cursor: grab;
+  }
+ .sidebarLogo{
+  display: flex;
+ }
+  .dropdown-menu {
+    top: 40px;
+        width: 100%;
+        margin: 0;
+        padding: 0px;
+        right: 0px;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        height: 400px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        background-color: black;
+        z-index: 2;
+        scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
+        text-align: center;
+        align-items: center;
+  }
+  .dropdown-menu::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+  .dropdown-menu .dropdown-item {
+    padding: 0px;
+    width: 90%;
+    background-color: black;
+    h3{
+      margin: 10px 0px;
+
+    }
+  }
+  .icons li {
+        /* margin: 10px; */
+        padding: 11px;
+        border-bottom: 1px solid rgb(10, 10, 10);
+        list-style: none;
+  }
+  .sub-dropdown-menu{
+    padding: 0;
+    display: none;
+  }
+  
+  .open-hamListcontainer .sub-dropdown-menu li{
+    margin: 0px;
+    background-color: rgb(89, 89, 162);
+       a{
+ color: rgb(13, 13, 13);
+    }
+  }
+
+  .open-hamListcontainer li,.navlistcontainer li {
+margin: 0px 15px;
+background-color: rgb(254, 255, 255);
+
+  }
+  .navlistcontainer li:hover{
+    color: #029eff;
+  }
+.sub-dropdown-menu.visible {
+  display: flex;
+}
+.resdropdown-menu {
+  width: 100%;
+}
+.resdropdown-menu li{
+  background-color: black;
+  border-top: 1px solid gainsboro;
+}
+ }
