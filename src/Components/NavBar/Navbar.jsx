@@ -3,6 +3,7 @@ import './Navbar.css';
 import {Link, NavLink, useLocation} from 'react-router';
 import Products from '../Pages/ProductPage/Products';
 import Res_Support from "../Pages/ResourcesPage/Res_Support"
+import Logo from "../../assets/Images/Logo-main.jpg";
 
 const Navbar = () => {
   // const [scrollData, setscrollData] = useState({ y: 0, lastY: 1 });
@@ -100,7 +101,9 @@ const Navbar = () => {
       // style={{ margin: "0px" }}
     >
       {/* here if the navBarViaibe is true then it will activate the show class from the css file else " " */}
-      <div className="logo">Girish-heats</div>
+      <div className="logo">
+        <img  src={Logo} alt="GirishEco_logo" />
+      </div>
       <div
         className="ham-menu"
         onClick={() => {
@@ -172,9 +175,12 @@ const Navbar = () => {
                     ) : (
                       <h3
                         onClick={() => toggleSubProductVisibility(product.id)}
-                        style={{ cursor: "pointer", borderBottom: "1px solid gray",
+                        style={{
+                          cursor: "pointer",
+                          borderBottom: "1px solid gray",
                           borderTop: "1px soild gray",
-                          padding: "10px", }}
+                          padding: "10px",
+                        }}
                       >
                         {product.name}
                       </h3>
