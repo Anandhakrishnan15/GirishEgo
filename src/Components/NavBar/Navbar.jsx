@@ -197,7 +197,7 @@ const Navbar = () => {
                             onClick={handleLinkClick}
                             to={`/Products/${product.id}/${subProduct.id}`}
                           >
-                            {subProduct.name}
+                            {subProduct.title}
                           </NavLink>
                         </li>
                       ))}

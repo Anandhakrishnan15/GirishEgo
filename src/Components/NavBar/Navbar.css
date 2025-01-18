@@ -19,13 +19,16 @@
 }
 .logo {
   /* border: 1px solid red; */
- 
+  margin-left: 15px;
   width: 239px; /* Adjust size as needed */
   object-fit:fill; /* Ensures the aspect ratio is preserved */
 
   img{
     width:100%;
   }
+}
+.icons{
+  margin-right: 15px;
 }
 .navlistcontainer li {
  padding: 10px;
@@ -52,10 +55,10 @@
 }
 .dropdown-menu{
   position: absolute;
-  width: 750px;
+  width: 862px;
   right: 0;
-  top: 48px;
-  background-color:RGB(240, 240, 240);
+  top: 40px;
+  background-color:rgb(16, 16, 16);
   list-style: none;
   padding: 10px;
   margin: 0;
@@ -84,7 +87,7 @@
 }
 .dropdown-menu .dropdown-item {
   margin-bottom: 1px;
-  width: 140px;
+  width: 266px;
   border: none;
 }
 
@@ -108,13 +111,17 @@
 .sub-dropdown-menu li{
     margin: 2px;
     padding: 5px;
+    border-bottom: 1px solid ghostwhite;
     a{
-        color:RGB(50, 50, 50);
+        color:rgb(156, 156, 156);
     }
+}
+.sub-dropdown-menu li:hover{
+  border-bottom: 1px solid rgb(62, 126, 182);
 }
 
 .sub-dropdown-menu li a:hover{
-  color:RGB(15, 100, 174);
+  color:rgb(81, 140, 192);
   transition: ease-in;
 }
  nav .ham-menu{
