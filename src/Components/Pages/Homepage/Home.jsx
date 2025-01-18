@@ -6,8 +6,8 @@ import Products from '../ProductPage/Products';
 const Home = () => {
   return (
     <div>
-      <h1>homepage</h1>
-      {/* <Carousel /> */}
+      {/* <h1>homepage</h1> */}
+      <Carousel />
       {/* <div
         className="ProductCArdContainer"
         style={{
