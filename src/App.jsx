@@ -12,20 +12,20 @@ import ProductDetails from "./Components/Pages/ProductPage/ProductDetails";
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About-us" element={<AboutUs />} />
-        <Route path="/Contact-us" element={<ContactUs />} />
-        <Route path="/Resources" element={<Resources />} />
-        <Route path="/Products" element={<Products />} />
-        {/* Product-specific routes */}
-        <Route path="/Products/:productId" element={<ProductDetails />} />
-        <Route
-          path="/Products/:productId/:subProductId"
-          element={<ProductDetails />}
-        />
-      </Routes>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About-us" element={<AboutUs />} />
+          <Route path="/Contact-us" element={<ContactUs />} />
+          <Route path="/Resources" element={<Resources />} />
+          <Route path="/Products" element={<Products />} />
+          {/* Product-specific routes */}
+          <Route path="/Products/:productId" element={<ProductDetails />} />
+          <Route
+            path="/Products/:productId/:subProductId"
+            element={<ProductDetails />}
+          />
+        </Routes>
     </>
   );
 }
