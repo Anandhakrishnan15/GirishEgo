@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "./product.css"
 import Products from "./Products";
+import AnimatedElements from "../../Animations/AnimatedElements";
 
 const ProductDetails = () => {
   const { productId, subProductId } = useParams();
@@ -33,6 +34,7 @@ const ProductDetails = () => {
       <div>
         <h1>{product.name}</h1>
       </div> */}
+      <AnimatedElements />
       {product.subProducts.map((info) => (
         <div className="productsHolder">
           <div>
@@ -93,8 +95,7 @@ const ProductDetails = () => {
           </div>
         </div>
       ))}
-      ;
-    </div>
+      </div>
   );
 };
 
