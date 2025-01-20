@@ -8,24 +8,26 @@ import ContactUs from "./Components/Pages/ContactUsPage/ContactUs";
 import Resources from "./Components/Pages/ResourcesPage/Resources";
 import Products from "./Components/Pages/ProductPage/Products";
 import ProductDetails from "./Components/Pages/ProductPage/ProductDetails";
+import AnimatedElements from "./Components/Animations/AnimatedElements";
 
 function App() {
   return (
     <>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About-us" element={<AboutUs />} />
-          <Route path="/Contact-us" element={<ContactUs />} />
-          <Route path="/Resources" element={<Resources />} />
-          <Route path="/Products" element={<Products />} />
-          {/* Product-specific routes */}
-          <Route path="/Products/:productId" element={<ProductDetails />} />
-          <Route
-            path="/Products/:productId/:subProductId"
-            element={<ProductDetails />}
-          />
-        </Routes>
+      <Navbar />
+      <AnimatedElements/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About-us" element={<AboutUs />} />
+        <Route path="/Contact-us" element={<ContactUs />} />
+        <Route path="/Resources" element={<Resources />} />
+        <Route path="/Products" element={<Products />} />
+        {/* Product-specific routes */}
+        <Route path="/Products/:productId" element={<ProductDetails />} />
+        <Route
+          path="/Products/:productId/:subProductId"
+          element={<ProductDetails />}
+        />
+      </Routes>
     </>
   );
 }
