@@ -1,0 +1,55 @@
+:root{
+  --aboutUsdarkBule:#00274d;
+  --lightblue:#bfd2d8;
+}
+.about_us {
+  padding: 20px;
+  /* background-color: #f9f9f9; */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 40px;
+  /* border: 1px solid white; */
+  position: relative; /* Ensure z-index works */
+  z-index: 3; /* Set z-index for all sections */
+
+}
+
+.about_us h2 {
+  font-size: 2rem;
+  /* color: #333;*/
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about_us p {
+  font-size: 1rem;
+  line-height: 1.6;
+  /* color: #555; */
+}
+
+/* Default styling for all sections */
+.sectionWrapper {
+  /* border:1px solid red; */
+  padding: 20px 60px;
+  color: rgb(236, 219, 219); /* Adjust text color for better contrast */
+}
+
+/* Odd sections: Dark blue background */
+.sectionWrapper:nth-child(odd) {
+  background-color:var(--aboutUsdarkBule); /* Dark blue */
+  .about_us{
+    background-color: var(--aboutUsdarkBule);
+  }
+  h2{
+    color: white;
+  }
+}
+
+/* Even sections: Light blue background */
+.sectionWrapper:nth-child(even) {
+  background-color:var(--lightblue); /* Light blue */
+  color: #000; /* Adjust text color for better readability */
+  .about_us{
+    background-color: var(--lightblue);
+  }
+}
