@@ -5,8 +5,8 @@
 }
 .productContainer{
   margin: 0px 80px;
-  padding: 50px;
-  /* background: gray; */
+  padding: 0px;
+  background:var(--productHolder-bg);
   /* border: 1px solid red; */
   display: flex;
   flex-wrap: wrap; /* Allows wrapping of child elements */
@@ -14,8 +14,9 @@
 
 .productsHolder{
   /* border: 1px solid green; */
-  margin: 0px 50px;
-  background-color: var(--productHolder-bg);
+  margin: 0px 0px;
+  z-index: 1;
+  /* background-color: var(--productHolder-bg); */
 
 }
 .productsHolder:nth-child(even){

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "./product.css"
 import Products from "./Products";
-import AnimatedElements from "../../Animations/AnimatedElements";
+// import AnimatedElements from "../../Animations/AnimatedElements";
 
 const ProductDetails = () => {
   const { productId, subProductId } = useParams();
@@ -16,14 +16,14 @@ const ProductDetails = () => {
     (sub) => sub.id === subProductId
   );
   // Scroll to the product box when productId is provided
-  useEffect(() => {
-    if (subProductId && productRefs.current[subProductId]) {
-      productRefs.current[subProductId].scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  }, [subProductId]);
+  // useEffect(() => {
+  //   if (subProductId && productRefs.current[subProductId]) {
+  //     productRefs.current[subProductId].scrollIntoView({
+  //       behavior: "smooth",
+  //       block: "start",
+  //     });
+  //   }
+  // }, [subProductId]);
 
   return (
     // <>
@@ -34,7 +34,7 @@ const ProductDetails = () => {
       <div>
         <h1>{product.name}</h1>
       </div> */}
-      <AnimatedElements />
+ 
       {product.subProducts.map((info) => (
         <div className="productsHolder">
           <div>
