@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./carousel.css"; // Import the CSS file
+import AnimatedElements from "../Animations/AnimatedElements";
 
 const Carousel = () => {
   const images = [
@@ -30,7 +31,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel" style={{zIndex:'-1'}}>
+    <div className="carousel">
       <div className="image-container">
         <img
           src={images[currentIndex]}
@@ -45,6 +46,11 @@ const Carousel = () => {
       <button onClick={handleNext} className="carousel-button next-button">
         Next
       </button>
+
+      <AnimatedElements />
+      <div>
+        <h1 style={{ padding: "50px", color: "rebeccapurple" }}>helooo</h1>
+      </div>
     </div>
   );
 };
