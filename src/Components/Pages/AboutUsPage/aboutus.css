@@ -1,24 +1,37 @@
 :root{
   --aboutUsdarkBule:#00274d;
-  --lightblue:#bfd2d8;
+  --lightblue:#ffffff;
 }
 .about_us {
-  padding: 20px;
-  /* background-color: #f9f9f9; */
+  padding: 10px 20px;
   border-radius: 8px;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  margin-bottom: 40px;
-  /* border: 1px solid white; */
+  margin: 50px;
   position: relative; /* Ensure z-index works */
   z-index: 3; /* Set z-index for all sections */
+  /* team section */
+  .team-subSection{
+    margin:20px;
+    p{
+      background: rgba(62, 167, 247, 0.322);
+      padding: 20px;
+    }
+   
+  }
+  /* quality section */
+   ul{
+    margin-top: 20px;
+      margin-left:40px;
+     }
 
 }
 
 .about_us h2 {
   font-size: 2rem;
   /* color: #333;*/
-  margin-bottom: 20px;
-  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  border-bottom: 1px solid white;
 }
 
 .about_us p {
@@ -26,6 +39,30 @@
   line-height: 1.6;
   /* color: #555; */
 }
+.about_us .subsection{
+  h3{
+    color: var(--aboutUsdarkBule);
+    padding: 20px 0px ;
+  }
+  p{
+    padding: 0px 15px;
+  }
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 
 /* Default styling for all sections */
 .sectionWrapper {
@@ -51,5 +88,8 @@
   color: #000; /* Adjust text color for better readability */
   .about_us{
     background-color: var(--lightblue);
+    h2{
+      border-bottom: 1px solid rgb(0, 0, 0);
+    }
   }
 }
