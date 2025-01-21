@@ -8,7 +8,8 @@ const Infrastructure = ({ data }) => {
       {data.subsections.map((subsection, index) => (
         <div key={index} className="subsection">
           <h3>{subsection.subtitle}</h3>
-          <p>{subsection.content}</p>
+          {/* <p>{subsection.content}</p> */}
+          <p dangerouslySetInnerHTML={{ __html: subsection.content }}></p>
         </div>
       ))}
     </section>

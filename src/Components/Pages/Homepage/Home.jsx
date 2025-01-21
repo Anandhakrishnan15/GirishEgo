@@ -8,12 +8,15 @@ const Home = () => {
     <div>
       {/* <h1>homepage</h1> */}
       <Carousel />
+      <h1>home page</h1>
       {/* <div
         className="ProductCArdContainer"
         style={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-evenly",
+          position:'relative',
+          zIndex:'3',
         }}
       >
         {Products.map((Product) => (
