@@ -47,10 +47,8 @@ const Carousel = () => {
         Next
       </button>
 
-      <AnimatedElements />
-      <div>
-        <h1 style={{ padding: "50px", color: "rebeccapurple" }}>helooo</h1>
-      </div>
+      {/* <AnimatedElements /> */}
+     
     </div>
   );
 };
