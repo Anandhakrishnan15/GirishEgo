@@ -9,7 +9,7 @@ const Home = () => {
       {/* <h1>homepage</h1> */}
       <Carousel />
       <h1>home page</h1>
-      {/* <div
+      <div
         className="ProductCArdContainer"
         style={{
           display: "flex",
@@ -40,7 +40,7 @@ const Home = () => {
             />
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 }
