@@ -1,10 +1,15 @@
 import boxtypespace from '../../../assets/Images/ptoductsImg/boxtypespace.jpeg';
 import endfixingtype from "../../../assets/Images/ptoductsImg/endfixingtype.jpeg";
-import spaceheaters from "../../../assets/Images/ptoductsImg/spaceheaters.jpeg";
-// const images = {
-//   boxtypespace: require("../../../assets/Images/ptoductsImg/boxtypespace.jpeg"),
-//   endfixingtype: require("../../../assets/Images/ptoductsImg/endfixingtype.jpeg"),
-//   spaceheaters: require("../../../assets/Images/ptoductsImg/spaceheaters.jpeg"),
+import spaceheaters from "../../../assets/Images/ptoductsImg/space_Heaters_Img/spaceheaters.jpeg";
+import table1 from "../../../assets/Images/ptoductsImg/space_Heaters_Img/alsoAvalableTable.png";
+ import table2 from "../../../assets/Images/ptoductsImg/space_Heaters_Img/Tech_table.png";
+ import diagram from "../../../assets/Images/ptoductsImg/space_Heaters_Img/digram.png";
+ import alsoavalabel from "../../../assets/Images/ptoductsImg/space_Heaters_Img/asloavalibaelProducrs.png";
+// const spaceheaterImges = {
+//   table1: require("./assets/Images/ptoductsImg/space_Heaters_Img/alsoAvalableTable.png"),
+//   table2: require("./assets/Images/ptoductsImg/space_Heaters_Img/Tech_table.png"),
+//   diagram: require("./assets/Images/ptoductsImg/space_Heaters_Img/digram.png"),
+//   alsoavalabel: require("./assets/Images/ptoductsImg/space_Heaters_Img/asloavalibaelProducrs.png"),
 // };
 
 const Products = [
@@ -55,9 +60,15 @@ const Products = [
         ],
         remark: "Remark",
         recommendation: "Use a 'GIRISHEGO' thermostat to control the heater.",
+        otherImages: [
+         table1,
+         alsoavalabel,
+         diagram,
+         table2,
+        ],
       },
       {
-        id: "End-Fixing)",
+        id: "End-Fixing",
         title: "End Fixing Type (SAL)",
         productImg: endfixingtype,
         application: "For Panel Boards & Switchgear Industries",
