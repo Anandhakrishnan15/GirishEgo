@@ -35,7 +35,7 @@ const Cards = ({ logo, productImg, heading, options ,productId,}) => {
           <option value="">Select a subproduct</option>
           {options.map((option) => (
             <option key={option.id} value={option.id}>
-              {option.name}
+              {option.title}
             </option>
           ))}
         </select>
