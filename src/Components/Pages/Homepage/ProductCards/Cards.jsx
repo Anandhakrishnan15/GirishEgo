@@ -1,44 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css"; // Import CSS for styling
 import { useNavigate } from "react-router";
+import logo from "../../../../assets/Images/GEC Logo png.png";
+import { TbArrowBigRight, TbArrowBigRightFilled } from "react-icons/tb";
 
-const Cards = ({ logo, productImg, heading, options ,productId,}) => {
+const Cards = ({ productImg, heading, subProductsID, productId, pdric }) => {
+  const navigate = useNavigate();
+  const [isHovered, setIsHovered] = useState(false);
+
+  console.log(subProductsID);
+  console.log(productId);
+
   
-     const navigate = useNavigate();
+  const handleSelect = () => {
+    if ( subProductsID) {
+      navigate(`/Products/${productId}/${subProductsID}`); // Navigate to sub-product page
+    } else if (productId) {
+      navigate(`/Products/${productId}`); // Navigate to product page
+    }
+  };
 
-     const handleSelect = (event) => {
-       const selectedSubproduct = event.target.value;
-       if (selectedSubproduct) {
-         navigate(`/Products/${productId}/${selectedSubproduct}`); // Navigate to the subproduct page
-       }
-     };
   return (
-    <div className="card">
+    <div className="card" onClick={handleSelect}>
       {/* Logo */}
       <div className="card-logo-container">
         <img src={logo} alt="Logo" className="card-logo" />
-      </div>
-
-      {/* Product Image */}
-      <div className="card-product-img-container">
-        <img src={productImg} alt={heading} className="card-product-img" />
       </div>
 
       {/* Product Heading */}
       <div className="card-heading-container">
         <h3 className="card-heading">{heading}</h3>
       </div>
+      {/* card discriptions */}
+      <div className="cardDiscContainer">
+        <p className="card-discription">{pdric}</p>
+      </div>
+      {/* Product Image */}
+      <div className="card-product-img-container">
+        <img src={productImg} alt={heading} className="card-product-img" />
+        <div
+          className="readmorarrow"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          {/* Normal arrow */}
+          <TbArrowBigRight
+            className={`cursor-icon ${isHovered ? "hidden" : ""}`}
+          />
 
-      {/* Dropdown */}
-      <div className="card-dropdown-container">
-        <select className="card-dropdown" onChange={handleSelect}>
-          <option value="">Select a subproduct</option>
-          {options.map((option) => (
-            <option key={option.id} value={option.id}>
-              {option.title}
-            </option>
-          ))}
-        </select>
+          {/* Filled arrow with opacity transition */}
+          <TbArrowBigRightFilled
+            className={`cursor-icon filled-arrow ${isHovered ? "visible" : ""}`}
+          />
+        </div>
       </div>
     </div>
   );
