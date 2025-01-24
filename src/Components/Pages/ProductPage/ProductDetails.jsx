@@ -115,16 +115,17 @@ const ProductDetails = () => {
                     <li>{info.recommendation}</li>
                   </ul>
                 </div>
+                <div></div>
+                <div style={{ margin: "20px", color: "rgb(14, 51, 108)" }}>
+                  <h1>More info</h1>
+                </div>
                 {/* other Images container */}
                 <div className="otherImagesContainer">
                   {/* <h4>{info.remark}</h4> */}
-                  
-                    {info.otherImages.map((otherImg, idx) => (
-                        <img
-                         key={idx}
-                         src={otherImg} />
-                    ))}
-                 
+
+                  {info.otherImages.map((otherImg, idx) => (
+                    <img key={idx} src={otherImg} />
+                  ))}
                 </div>
               </div>
             </div>
