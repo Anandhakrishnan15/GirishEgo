@@ -9,25 +9,28 @@ import Resources from "./Components/Pages/ResourcesPage/Resources";
 import Products from "./Components/Pages/ProductPage/Products";
 import ProductDetails from "./Components/Pages/ProductPage/ProductDetails";
 import AnimatedElements from "./Components/Animations/AnimatedElements";
+import Footer from "./Components/Pages/footer/Footer";
+import PoductsId from "./Components/Pages/Homepage/PoductsId";
 
 function App() {
   return (
     <>
       <Navbar />
-      <AnimatedElements/>
+      <AnimatedElements />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About-us" element={<AboutUs />} />
         <Route path="/Contact-us" element={<ContactUs />} />
         <Route path="/Resources" element={<Resources />} />
-        <Route path="/Products" element={<Products />} />
+        {/* <Route path="/Products" element={<Products />} /> */}
         {/* Product-specific routes */}
-        <Route path="/Products/:productId" element={<ProductDetails />} />
+        <Route path="/Products/:productId" element={<PoductsId />} />
         <Route
           path="/Products/:productId/:subProductId"
           element={<ProductDetails />}
         />
       </Routes>
+      <Footer />
     </>
   );
 }
