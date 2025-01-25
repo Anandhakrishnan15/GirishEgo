@@ -11,30 +11,33 @@
   background-color: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover{
-  transform: scale(1.05); /* Slight zoom-in effect */
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+.card:hover {
+  transform: scale(1.05);
+  /* Slight zoom-in effect */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.card-logo-container, 
+.card-logo-container,
 .card-product-img-container,
-.card-heading-container,.cardDiscContainer,
+.card-heading-container,
+.cardDiscContainer,
 .card-dropdown-container {
   margin-bottom: 15px;
 }
 
 .card-logo {
-width: 40%;
+  width: 40%;
 
 }
 
 .card-product-img {
-      width: 100%;
-        mix-blend-mode:multiply;
-        aspect-ratio: 4 / 3;
-        object-fit: contain;
-        margin-top: -40px;
-        /* position: relative; */
+  width: 100%;
+  mix-blend-mode: multiply;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin-top: -40px;
+  /* position: relative; */
 }
 
 .card-heading {
@@ -54,42 +57,35 @@ width: 40%;
   font-size: 1rem;
   background-color: #f9f9f9;
 }
-.card-discription{
+
+.card-discription {
   margin-left: 10px;
   font-size: 13px;
 }
-.readmorarrow{
+
+.readmorarrow {
   position: relative;
-  padding-right: 40px; /* Ensure space for the icon */
+  padding-right: 40px;
+  /* Ensure space for the icon */
 }
+
 .cursor-icon {
   position: absolute;
   right: 0;
   top: -35px;
-    color:rgb(0 159 226);
-stroke-width: 1px; /* Reduce thickness */
-   font-size: 60px;
-   /* transform: translateY(-50%); */
-       transform: rotate(330deg);
-   transition: opacity 0.6s ease-in-out; /* Slow opacity transition */   
+  color: rgb(0 159 226);
+  stroke-width: 1px;
+  /* Reduce thickness */
+  font-size: 60px;
+  /* transform: translateY(-50%); */
+  transform: rotate(330deg);
+  fill: transparent;
+  /* Default */
+  transition: fill 0.3s ease-in-out;
+  /* Slow opacity transition */
 }
 
-.hidden {
-  opacity: 0;
-}
-/* rgb(14 51 108) */
-.filled-arrow {
-   color:rgb(0 159 226);
-  position: absolute; /* Overlaps the other icon */
-  opacity: 0;
-stroke-width: 1px; /* Reduce thickness */
-
-  transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
-  /* Apply a gradient mask */
-  /* -webkit-mask-image: linear-gradient(to right, rgb(69, 85, 170) 0%, rgb(4, 106, 196) 100%); */
-  /* mask-image: linear-gradient(to right, rgba(27, 101, 193, 0.819) 0%, rgb(29, 98, 194) 100%); */
-}
-
-.visible {
-  opacity: 1;
+.cursor-icon:hover {
+  fill: rgb(0 159 226);
+  /* Blue fill on hover */
 }

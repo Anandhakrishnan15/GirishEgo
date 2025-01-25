@@ -6,23 +6,21 @@ import { TbArrowBigRight, TbArrowBigRightFilled } from "react-icons/tb";
 
 const Cards = ({ productImg, heading, subProductsID, productId, pdric }) => {
   const navigate = useNavigate();
-  const [isHovered, setIsHovered] = useState(false);
-
-  console.log(subProductsID);
-  console.log(productId);
-
-  
   const handleSelect = () => {
-    if ( subProductsID) {
+    if ( subProductsID) {// if there is a sub-product then only it should  work 
       navigate(`/Products/${productId}/${subProductsID}`); // Navigate to sub-product page
-    } else if (productId) {
+    } else if (productId) {// if there is only product page only then it should work
       navigate(`/Products/${productId}`); // Navigate to product page
     }
   };
-  const truncateText = (text, maxLength = 100) => {
-    return text.length > maxLength
-      ? text.substring(0, maxLength) + "..."
-      : text;
+  // make the discription in the card short function
+  const truncateText = (pdric, maxLength = 100) => {
+    if(pdric){// if a discription is there then only it this have to work other wise nothing
+ return pdric.length > maxLength
+   ? pdric.substring(0, maxLength) + "..."
+   : pdric;
+    }
+   
   };
 
   return (
@@ -43,20 +41,12 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric }) => {
       {/* Product Image */}
       <div className="card-product-img-container">
         <img src={productImg} alt={heading} className="card-product-img" />
-        <div
-          className="readmorarrow"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+        <div className="readmorarrow">
           {/* Normal arrow */}
           <TbArrowBigRight
-            className={`cursor-icon ${isHovered ? "hidden" : ""}`}
+            className={`cursor-icon `}
           />
 
-          {/* Filled arrow with opacity transition */}
-          <TbArrowBigRightFilled
-            className={`cursor-icon filled-arrow ${isHovered ? "visible" : ""}`}
-          />
         </div>
       </div>
     </div>
