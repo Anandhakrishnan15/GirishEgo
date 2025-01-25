@@ -128,6 +128,9 @@
 
 .Product-info-key img {
   width: 60%;
+  height: 350px;
+  /* aspect-ratio: 4/3; */
+  object-fit:contain;
   align-items: center;
 }
 
@@ -140,6 +143,7 @@
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 
   .decriptions {
     width: 80%;
@@ -174,11 +178,12 @@
 .testingContainer,
 .instalaationcontainer,
 .remarkContainer {
-  width: 40%;
+  flex: 1; /* Make width dynamic */
   height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 25px;
-  margin-bottom: 20px;
+  margin: 10px;
+  min-width: 40%; /* Minimum width */
 
   ol {
     margin-top: 10px;
@@ -196,8 +201,11 @@
 }
 .otherImagesContainer{
   img{
-    width:50%;
+  flex: 1; /* Make width dynamic */
+  height: fit-content;
+  min-width: 40%; /* Minimum width */
   }
+
   display: flex;
   flex-wrap: wrap;
 }
