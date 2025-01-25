@@ -17,7 +17,8 @@ const PoductsId = () => {
     <div
       style={{
         display: "flex",
-        justifyContent:'space-around'
+        justifyContent:'space-around',
+        flexWrap: 'wrap',
       }}
     >
       {productCat.subProducts.map((sp) => (
