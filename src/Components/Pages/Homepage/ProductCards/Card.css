@@ -55,15 +55,8 @@ width: 40%;
   background-color: #f9f9f9;
 }
 .card-discription{
- display: -webkit-box;
-  -webkit-line-clamp: 3; 
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  position: relative;
   margin-left: 10px;
   font-size: 13px;
-  max-height: 3.6em; /* Adjust to match 2.5 lines depending on font size */
-  line-height: 1.2em; /* Adjust based on your font size */
 }
 .readmorarrow{
   position: relative;

@@ -19,6 +19,11 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric }) => {
       navigate(`/Products/${productId}`); // Navigate to product page
     }
   };
+  const truncateText = (text, maxLength = 100) => {
+    return text.length > maxLength
+      ? text.substring(0, maxLength) + "..."
+      : text;
+  };
 
   return (
     <div className="card" onClick={handleSelect}>
@@ -33,7 +38,7 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric }) => {
       </div>
       {/* card discriptions */}
       <div className="cardDiscContainer">
-        <p className="card-discription">{pdric}</p>
+        <p className="card-discription">{truncateText(pdric)}</p>
       </div>
       {/* Product Image */}
       <div className="card-product-img-container">
