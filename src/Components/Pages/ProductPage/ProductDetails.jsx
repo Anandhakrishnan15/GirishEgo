@@ -71,12 +71,14 @@ const ProductDetails = () => {
             {/* Description and other details */}
             <div className="productDiscriptionHolder">
               {/* Product description */}
-              <div className="decriptions">
-                <span className="hand-icon">
-                  <FaRegHandPointRight />
-                </span>
-                <p>{info.description}</p>
-              </div>
+              {info.description && (
+                <div className="decriptions">
+                  <span className="hand-icon">
+                    <FaRegHandPointRight />
+                  </span>
+                  <p>{info.description}</p>
+                </div>
+              )}
               {/* woking details container */}
               <div className="working-testingDetailscontainer">
                 <div className="workingHolder">
@@ -93,40 +95,46 @@ const ProductDetails = () => {
                   </ol>
                 </div>
                 {/* instaltion containder */}
-                <div className="instalaationcontainer">
-                  <h4>{info.Installation}</h4>
-                  <ul>
-                    {info.instructions.map((instruction, index) => (
-                      <li key={index}>{instruction}</li>
-                    ))}
-                  </ul>
-                </div>
-                {/* testing container */}
-                <div className="testingContainer">
-                  <h4>{info.intended}</h4>
-                  <ul>
-                    <li>{info.uses.join(", ")}</li>
-                  </ul>
-                </div>
-                {/* remark container */}
-                <div className="remarkContainer">
-                  <h4>{info.remark}</h4>
-                  <ul>
-                    <li>{info.recommendation}</li>
-                  </ul>
-                </div>
-                <div></div>
-                <div style={{ margin: "20px", color: "rgb(14, 51, 108)" }}>
-                  <h1>More info</h1>
-                </div>
-                {/* other Images container */}
-                <div className="otherImagesContainer">
-                  {/* <h4>{info.remark}</h4> */}
+                {info.Installation && (
+                  <div className="instalaationcontainer">
+                    <h4>{info.Installation}</h4>
+                    <ul>
+                      {info.instructions.map((instruction, index) => (
+                        <li key={index}>{instruction}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
-                  {info.otherImages.map((otherImg, idx) => (
-                    <img key={idx} src={otherImg} />
-                  ))}
-                </div>
+                {/* testing container */}
+                {info.intended && (
+                  <div className="testingContainer">
+                    <h4>{info.intended}</h4>
+                    <ul>
+                      <li>{info.uses.join(", ")}</li>
+                    </ul>
+                  </div>
+                )}
+                {/* remark container */}
+                {info.remark && (
+                  <div className="remarkContainer">
+                    <h4>{info.remark}</h4>
+                    <ul>
+                      <li>{info.recommendation}</li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+              <div style={{ margin: "20px", color: "rgb(14, 51, 108)" }}>
+                <h1>More info</h1>
+              </div>
+              {/* other Images container */}
+              <div className="otherImagesContainer">
+                {/* <h4>{info.remark}</h4> */}
+
+                {info.otherImages.map((otherImg, idx) => (
+                  <img key={idx} src={otherImg} />
+                ))}
               </div>
             </div>
           </div>
