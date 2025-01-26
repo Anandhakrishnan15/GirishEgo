@@ -9,8 +9,8 @@ import Resources from "./Components/Pages/ResourcesPage/Resources";
 import Products from "./Components/Pages/ProductPage/Products";
 import ProductDetails from "./Components/Pages/ProductPage/ProductDetails";
 import AnimatedElements from "./Components/Animations/AnimatedElements";
-import Footer from "./Components/Pages/footer/Footer";
 import PoductsId from "./Components/Pages/Homepage/PoductsId";
+import Footer from "./Components/footer/Footer";
 
 function App() {
   return (
