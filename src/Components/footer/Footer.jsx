@@ -1,6 +1,6 @@
 import React from "react";
 // import Logo from '../../../assets/Images/logo1.png'
-import Logo from "../../../assets/Images/GEC Logo png.png";
+import Logo from "../../assets/Images/GEC Logo png.png";
 
 import "./Footer.css";
 

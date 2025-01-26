@@ -177,7 +177,8 @@
 .workingHolder,
 .testingContainer,
 .instalaationcontainer,
-.remarkContainer {
+.remarkContainer,
+.constrationContainer{
   flex: 1; /* Make width dynamic */
   height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
