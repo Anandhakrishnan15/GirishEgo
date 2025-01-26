@@ -57,7 +57,7 @@ const ProductDetails = () => {
               <img src={info.productImg} alt={info.title} />
               {/* features of the products */}
               <div className="fecturesbox">
-                <h4>Features</h4>
+                <h4>{info.featuresH}</h4>
                 <ul>
                   {info.features.map((feature, i) => (
                     <li key={i}>
@@ -105,7 +105,16 @@ const ProductDetails = () => {
                     </ul>
                   </div>
                 )}
-
+                {info.construtionH && (
+                  <div className="constrationContainer">
+                    <h4>{info.construtionH}</h4>
+                    <ul>
+                      {info.constrution.map((c, index) => (
+                        <li key={index}>{c}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 {/* testing container */}
                 {info.intended && (
                   <div className="testingContainer">
