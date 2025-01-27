@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Card.css"; // Import CSS for styling
 import { useNavigate } from "react-router";
-import logo from "../../../../assets/Images/GEC Logo png.png";
+import logo from "../../assets/Images/GEC Logo png.png";
 import { TbArrowBigRight, TbArrowBigRightFilled } from "react-icons/tb";
 
-const Cards = ({ productImg, heading, subProductsID, productId, pdric }) => {
+const Cards = ({ productImg, heading, subProductsID, productId, pdric, }) => {
   const navigate = useNavigate();
   const handleSelect = () => {
     if ( subProductsID) {// if there is a sub-product then only it should  work 
@@ -43,10 +43,7 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric }) => {
         <img src={productImg} alt={heading} className="card-product-img" />
         <div className="readmorarrow">
           {/* Normal arrow */}
-          <TbArrowBigRight
-            className={`cursor-icon `}
-          />
-
+          <TbArrowBigRight className={`cursor-icon `} />
         </div>
       </div>
     </div>
@@ -54,3 +51,20 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric }) => {
 };
 
 export default Cards;
+
+ 
+  //  /* Show select dropdown if 'select' array exists */
+ 
+// {
+//   select && select.length > 0 && (
+//     <div className="select-container">
+//       <select className="product-select">
+//         {select.map((option, idx) => (
+//           <option key={idx} value={option}>
+//             {option}
+//           </option>
+//         ))}
+//       </select>
+//     </div>
+//   );
+// }

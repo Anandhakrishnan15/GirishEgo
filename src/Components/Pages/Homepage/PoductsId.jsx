@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from './ProductCards/Cards'
+import Cards from '../../ProductCards/Cards'
 import Products from "../ProductPage/Products";
 import { useParams } from 'react-router-dom';
 
@@ -17,8 +17,8 @@ const PoductsId = () => {
     <div
       style={{
         display: "flex",
-        justifyContent:'space-around',
-        flexWrap: 'wrap',
+        justifyContent: "space-around",
+        flexWrap: "wrap",
       }}
     >
       {productCat.subProducts.map((sp) => (

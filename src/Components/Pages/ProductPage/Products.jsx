@@ -77,7 +77,7 @@ import Dlc2 from "../../../assets/Images/ptoductsImg/dlximages/dlx (2).png";
 import Dlc3 from "../../../assets/Images/ptoductsImg/dlximages/dlx (3).png";
 import Dlc4 from "../../../assets/Images/ptoductsImg/dlximages/dlx (4).png";
 import Dlc5 from "../../../assets/Images/ptoductsImg/dlximages/dlx (5).png";
- //  "ENCLOSURE-THERMOSTAT" images 
+//  "ENCLOSURE-THERMOSTAT" images 
 import ET1 from "../../../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (4).png";
 import ET2 from "../../../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (1).png";
 import ET3 from "../../../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (2).png";
@@ -142,9 +142,56 @@ import TRMD3 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC TH
 import TRMD4 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (4).png";
 import TRMD5 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (5).png";
 import TRMD6 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (6).png";
+// Hazardous Area Heater images
+import HazdH1 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (1).png";
+import HazdH2 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (2).png";
+import HazdH3 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (3).png";
+import HazdH4 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (4).png";
+import HazdH5 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (5).png";
+import HazdH6 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (6).png";
+// Compact High Performance Fan Heater images
+import CHPFH1 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (1).png";
+import CHPFH2 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (2).png";
+import CHPFH3 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (3).png";
+import CHPFH4 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (4).png";
+import CHPFH5 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (5).png";
+import CHPFH6 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (6).png";
+// small semi =conductor heater
+import ssch1 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (2).png";
+import ssch2 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (1).png";
+import ssch3 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (3).png";
+import ssch4 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (4).png";
+import ssch5 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (5).png";
+// ELECTRONIC HYGROSTAT 2
+import ehII1 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (1).png";
+import ehII2 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (2).png";
+import ehII3 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (3).png";
+import ehII4 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (4).png";
+// Hazardous Area Thermostat
+import hat1 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (1).png";
+import hat2 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (2).png";
+import hat3 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (3).png";
+import hat4 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (4).png";
+import hat5 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (5).png";
+import hat6 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (6).png";
+// PRESSURE COMPENSATION DEVICE
+import pcd1 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (1).png";
+import pcd2 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (2).png";
+import pcd3 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (3).png";
+import pcd4 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (4).png";
+import pcd5 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (5).png";
+ // DOCUMENT POCKET FOR ENCLOSURE
+import dpe1 from "../../../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (1).png";
+import dpe2 from "../../../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (2).png";
+import dpe3 from "../../../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (3).png";
+import dpe4 from "../../../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (4).png";
 
 
-
+// LED LIGHT FOR PANELBOARD & SWITCHGEAR
+import led1 from "../../../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (2).png";
+import led2 from "../../../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (1).png";
+import led3 from "../../../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (3).png";
+import led4 from "../../../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (4).png";
 
 
 
@@ -449,6 +496,97 @@ const Products = [
         recommendation: "",
         otherImages: [FanH2, FanH3, FanH4, FanH5, FanH6, FanH7],
       },
+      //Hazardous Area Heater
+      {
+        id: "Hazardous-Area-Heater",
+        title: "Hazardous Area Heater",
+        productImg: HazdH1,
+        application: "",
+        models: [
+          " SCREX020T5 150W/100W ",
+          "SCREX020T4 |50W/100W/150W/200W",
+          " SCREX020T3 50W/100W/150W/200W/250W",
+        ],
+        featuresH: "Features",
+        features: [
+          "For use in Hazardous Area",
+          "Large convection surface",
+          "Din Rail & Screw mounting Ready to use with Strain relief",
+          "Maintenance Free",
+        ],
+        description: "",
+        workingH: "Working Principle & Features",
+        workingDetails: [
+          "Compact convection heater is for use in hazardous areas for prevention of formation of condensation, temperature fluctuations, and for protection against frost in control and switch cabinets, as well as in measuring equipment. ",
+        ],
+        tests: [],
+        intended: "",
+        uses: [],
+        Installation: "",
+        instructions: [],
+        remark: "",
+        recommendation: "",
+        otherImages: [HazdH2, HazdH3, HazdH4, HazdH5, HazdH6],
+      },
+      // CHPFH1
+      {
+        id: "Compact-High-Performance-Fan-Heater",
+        title: "Compact High Performance Fan Heater",
+        productImg: CHPFH1,
+        application: "",
+        models: ["SCS0130 700W/900W/1200W"],
+        featuresH: "Features",
+        features: [
+          "Compact Design",
+          "Double Insulated",
+          "Din Rail & Screw mounting",
+          "High Heating Performance",
+          "Inbuilt Thermostat (Optional)",
+        ],
+        description: "",
+        workingH: "Working Principle & Features",
+        workingDetails: [
+          "The compact, high-performance fan heater prevents condensation and frost while ensuring evenly distributed interior air temperature in enclosures containing electrical or electronic components.",
+          "Its plastic housing offers double insulation and contact protection. The fan heater is available with an integrated thermostat for precise temperature control. ",
+          "Designed as a stationary unit, the SCS 0130 is intended for wall mounting, while the SCS 0030 is recommended for installation at the bottom of the enclosure.",
+        ],
+        tests: [],
+        intended: "",
+        uses: [],
+        Installation: "",
+        instructions: [],
+        remark: "",
+        recommendation: "",
+        otherImages: [CHPFH2, CHPFH4, CHPFH3, CHPFH5, CHPFH6],
+      },
+      // small semi =conductor heater
+      {
+        id: "SMALL-SEMICONDUCTOR-HEATER",
+        title: "SMALL SEMICONDUCTOR HEATER",
+        productImg: ssch1,
+        application: "",
+        models: ["SRC-016 8W, 10W, 13W"],
+        featuresH: "Features",
+        features: [
+          "Temperature Limiting",
+          "Vide Woltage Range",
+          "Dynamic Heating",
+          "Energy Saving & Compact",
+        ],
+        description: "",
+        workingH: "Working Principle & Features",
+        workingDetails: [
+          "These small heaters are designed to ensure prevention of condensation along with minimum operating temperature in small enclosure like camera enclosure etc,",
+        ],
+        tests: [],
+        intended: "",
+        uses: [],
+        Installation: "",
+        instructions: [],
+        remark: "",
+        recommendation: "",
+        otherImages: [ssch4, ssch5, ssch3, ssch2],
+      },
     ],
   },
   {
@@ -530,6 +668,44 @@ const Products = [
         remark: "",
         recommendation: "",
         otherImages: [round2, round3, round6, round4, round5],
+      },
+      //stem heaters data
+      {
+        id: "Stem-Thermostat",
+        title: "STEM THERMOSTAT",
+        productImg: stem4,
+        application: "For Panel Boards & Switchgear Industries",
+        models: ["200 series", "300 series", "400series", "GEC", "GEO", "TCO"],
+        featuresH: "Also Available",
+        features: [
+          "1)	Smaller stem lengths of 4'(100 mm) & 5'(125mm)",
+          "Normally open contacts (N.O.C)",
+          "20Amp.thermostat",
+          "Preset at fixed temperature",
+        ],
+        description:
+          "'GIRISHEGO' Range of stem type thermostats are designed to meet a variety of requirements for domestic, industrial and commercial heating systems. Our thermostats come in different shapes and models to suit the individual requirement of application and economy. These are suitable for instant and storage type water heaters, water and oil baths, moulds, sterilizers, ovens, boilers, switchgear and panel boards and other domestic and industrial heating appliances.",
+        workingDetails: [
+          "With temp rise, the principle of differential expansion of brass tube and a nickel/ iron (inver) Rod is used to actuate a highly accurate snap action micro gap switch located in the head which makes it keep the temperature of liquid or solid, constant within the differential I.e. A Single pole, single throw, normally closed circuit breaks (opens) on rise of temperature.",
+        ],
+        construtionH: "Constrution",
+        constrution: [
+          "The micro gap switch assembly is mounted on a heat resistant base, with brass terminals. Heavy duty Ag cdo contacts are provided for long trouble free life.",
+          "A thermoplastic/thermosetting cover with clear and precise graduations is provided along with a setting knob. A spring steel clip is provided for snap on fixing ofThermostat. It can be fixed in any position. ",
+          "Thermostats are available in three standard stem lengths 7'(175mm), 11'(275 mm), 18' (450mm) with tube diameter of 5/16'(8mm).",
+        ],
+        tests: [],
+        intended: "Intended Use",
+        uses: [
+          "Temperature control of space heaters used in LT & HT switchgear & panel boards etc.",
+        ],
+        Installation: "Installation",
+        instructions: [
+          "A spring steel clip is provided for snap on fixing of Thermostat, Optional bracket with two fixing holes of Dia. 5mm at a center distance of 58mm can be provided. It can be fixed in any position.",
+        ],
+        remark: "",
+        recommendation: "",
+        otherImages: [stem3, stem1, stem5, stem2],
       },
       //ENCLOSURE-THERMOSTAT
       {
@@ -839,66 +1015,190 @@ const Products = [
         recommendation: "",
         otherImages: [TRMD2, TRMD5, TRMD4, TRMD6, TRMD1],
       },
+      // ELECTRONIC HYGROSTAT
+      {
+        id: "ELECTRONIC-HYGROSTAT-SKR-3118",
+        title: "ELECTRONIC HYGROSTAT SKR-3118",
+        productImg: ehII1,
+        application: "",
+        models: ["SFTD-011"],
+        featuresH: "features",
+        features: [
+          "Compact Design",
+          "Set Temperatur",
+          "High Switching Capacity",
+          "Clip Fixing",
+        ],
+        description: "",
+        workingH: "Principle of Operation",
+        workingDetails: [
+          "Tamper-proof (Pre-set) Thermostat/Contact breaker (NC) for regulating heaters or for switching signal devices, when temperature has fallen below the minimum value.",
+          " The contact opens when temperature is rising.The SR-3118 Hygrostat senses the relative humidity in an enclosure with electric/electronic components and turn on a heater at the set point, helping prevent the formation of condensation in the enclosure. ",
+        ],
+        construtionH: "Uses:",
+        constrution: [
+          "These are especially used for controlling fan filter, heater and heat exchanger, also could be monitoring the electric cabinet inner temperature when working as signal arouser.",
+        ],
+        tests: [],
+        intended: "Important",
+        uses: [
+          "1. Makebimetal sensor as heat sensitivity set to feedback of heat",
+          "2. Contact point scheme:single switchover contact point as instant switch component",
+          "3. Voltage scope is wide any type could be used from 24V to 230V",
+          "4. Time-saving connection,terminal block could be installed with screw from outside screw from outside",
+          "5. Easy installation,could be installed to 35mm din rail vertically or horizontally according to EN50 022, it could be clipped to NS/35-ES cabinet profile with its accessory adapter.",
+        ],
+        Installation: "",
+        instructions: [],
+        remark: "",
+        recommendation: "",
+        otherImages: [ehII3, ehII4, ehII2],
+      },
+      // Hazardous Area Thermostat
+      {
+        id: "Hazardous-Area-Thermostat",
+        title: "Hazardous Area Thermostat",
+        productImg: hat1,
+        application: "",
+        models: ["SCRex-011"],
+        featuresH: "features",
+        features: [
+          "Compact Design",
+          "Set Temperature",
+          "High switching capacity",
+        ],
+        description: "",
+        workingH: "Principle of Operation",
+        workingDetails: [
+          "Compact small mechanical thermostat for temperature regulaon and monitoring of heaters, for example in transmier cabinets, control panels and measuring equipment which are deployed in areas with explosion hazard ",
+          "The special switch construcon enables high response accuracy, small switch temperature difference and a very long service life",
+          "High switching performance allows direct control of the heaters.",
+        ],
+        construtionH: "",
+        constrution: [],
+        tests: [],
+        intended: "",
+        uses: [],
+        Installation: "",
+        instructions: [],
+        remark: "",
+        recommendation: "",
+        otherImages: [hat2, hat3, hat6, hat4, hat5],
+      },
     ],
   },
   {
     id: "Accessories",
     name: "Accessories",
     subProducts: [
-      //stem heaters data
+      // Hazardous Area Thermostat
       {
-        id: "Stem-Thermostat",
-        title: "STEM THERMOSTAT",
-        productImg: stem1,
-        application: "For Panel Boards & Switchgear Industries",
-        models: ["200 series", "300 series", "400series", "GEC", "GEO", "TCO"],
-        featuresH: "Also Available",
+        id: "PRESSURE-COMPENSATION-DEVICE",
+        title: "PRESSURE COMPENSATION DEVICE",
+        productImg: pcd1,
+        application: "",
+        models: ["SDA-084/ SDA-284"],
+        featuresH: "features",
         features: [
-          "1)	Smaller stem lengths of 4'(100 mm) & 5'(125mm)",
-          "Normally open contacts (N.O.C)",
-          "20Amp.thermostat",
-          "Preset at fixed temperature",
+          "High Degree of Protection",
+          "Waterproof Membrane (SDA-284)",
+          "Easy to Install",
         ],
-        description:
-          "'GIRISHEGO' Range of stem type thermostats are designed to meet a variety of requirements for domestic, industrial and commercial heating systems. Our thermostats come in different shapes and models to suit the individual requirement of application and economy. These are suitable for instant and storage type water heaters, water and oil baths, moulds, sterilizers, ovens, boilers, switchgear and panel boards and other domestic and industrial heating appliances.",
+        description: "",
+        workingH: "Principle of Operation",
         workingDetails: [
-          "With temp rise, the principle of differential expansion of brass tube and a nickel/ iron (inver) Rod is used to actuate a highly accurate snap action micro gap switch located in the head which makes it keep the temperature of liquid or solid, constant within the differential I.e. A Single pole, single throw, normally closed circuit breaks (opens) on rise of temperature.",
+          "It has become more and more important to provide a protected enclosure environment for and crucial electrical and electronic components.",
+          "In a tightly closed enclosure, pressure differentials can occur during extreme temperature variations, such as day/night operation.",
+          "When this occurs, the risk of dust and humidity being absorbed into the control panel increases dramatically.",
+          "The specially designed pressure compensation plug SDA 084 permits a controlled change in pressure.",
+          "It can be installed easily in any enclosure. Because of the pressure compensation plug's high degree of protection (IP45 for SDA-084 & Ip66 FOR SDA-284), the protection type of the enclosure will not be affected",
+          "IN SDA-284, Even with a slight overpressure. a waterproof membrane inside the Plug allows the humidity to escape whilst blocking water and dirt from entering the enclosure",
         ],
-        construtionH: "Constrution",
+        construtionH: "Installation of SDA-084",
         constrution: [
-          "The micro gap switch assembly is mounted on a heat resistant base, with brass terminals. Heavy duty Ag cdo contacts are provided for long trouble free life.",
-          "A thermoplastic/thermosetting cover with clear and precise graduations is provided along with a setting knob. A spring steel clip is provided for snap on fixing ofThermostat. It can be fixed in any position. ",
-          "Thermostats are available in three standard stem lengths 7'(175mm), 11'(275 mm), 18' (450mm) with tube diameter of 5/16'(8mm).",
+          "SDA-084 Protection type IP45 & IP55 (with Gasket)",
+          "Make cut-out ø37 +1 mm in enclosure wall and mount pressure compensation device with nut. Please make sure that the sealing gasket is put in place on the outer side panel of the enclosure.",
+          "For optimal pressure compensation we recommend to use two devices on opposite sides towards the top of the enclosure.",
         ],
         tests: [],
-        intended: "Intended Use",
+        intended: "Installation of SDA-084",
         uses: [
-          "Temperature control of space heaters used in LT & HT switchgear & panel boards etc.",
+          "SDA-084 Available with gasket Protection type IP66 ",
+          "Make cut-out ø40 5 mm in enclosure wall and mount pressure compensation device with nut. Please make sure that the sealing gasket is put in place on the outer side panel of the enclosure.",
+          "For optimal pressure compensation we recommend to use two devices on opposite sides towards the top of the enclosure.",
         ],
-        Installation: "Installation",
-        instructions: [
-          "A spring steel clip is provided for snap on fixing of Thermostat, Optional bracket with two fixing holes of Dia. 5mm at a center distance of 58mm can be provided. It can be fixed in any position.",
-        ],
+        Installation: "",
+        instructions: [],
         remark: "",
         recommendation: "",
-        otherImages: [stem3, stem4, stem5, stem2],
+        otherImages: [pcd2, pcd3, pcd4, pcd5],
       },
+      // DOCUMENT POCKET FOR ENCLOSURE
       {
-        id: "sub2",
-        title: "Sub Product 3.2",
-        productInfo:
-          "lorigiuhduoahlfharuhgajbfvabsiuv aiushdfiu ahfiusdfbia isdfbisudhfau sdhfi u isd sd fa iuai  ",
-        productApplication:
-          "fuagfbkjagfbakjddfhau fgu uh uwh d9wo yhaegrhgifg 8a sjg98gyoekgjgerygh eygh8989ahgp9q7yrgnu e8hgndhfhv dyvv g ig info8yehg q vouhfkm  9z.n nk9ah nio a;oih/zha/eirug",
+        id: "DOCUMENT-POCKET",
+        title: "DOCUMENT POCKET FOR ENCLOSURE",
+        productImg: dpe1,
+        application: "",
+        models: ["SEI DOC POCKET"],
+        featuresH: "features",
+        features: [
+          "ABS new material according to RoHS",
+          "A class quality",
+          "Holding for documents on cabinet and enclosure",
+          "Easy to install onto cabinet and enclosure",
+        ],
+        description: "",
+        workingH: "Principle of Operation",
+        workingDetails: [
+          "This Doc pocket suitable for use with any enclosure or server cabinet",
+          "The holder allows easy mounting onto any surface to provide convenient storage for valuable and important documents like wiring diagrams, user guides, certifications or catalogues that are used and required alongside the item that is housed in the enclosure.",
+          "By using 4 screw holes, the holder provides a strong attachment, even in harsh environments. This document pocket is a versatile server cabinet and enclosure accessory that can be used across a wide range of applications.",
+        ],
+        construtionH: "",
+        constrution: [],
+        tests: [],
+        intended: "",
+        uses: [],
+        Installation: "",
+        instructions: [],
+        remark: "",
+        recommendation: "",
+        otherImages: [dpe2, dpe4, dpe3],
       },
+      // LED LIGHT FOR PANELBOARD & SWITCHGEAR
       {
-        id: "sub3",
-        title: "Sub Product 3.3",
-        productInfo:
-          "lorigiuhduoahlfharuhgajbfvabsiuv aiushdfiu ahfiusdfbia isdfbisudhfau sdhfi u isd sd fa iuai  ",
-        productApplication:
-          "fuagfbkjagfbakjddfhau fgu uh uwh d9wo yhaegrhgifg 8a sjg98gyoekgjgerygh eygh8989ahgp9q7yrgnue8hgndhfhv dyvv g ig info8yehg q vouhfkm  9z.n nk9ah nio a;oih/zha/eirug",
+        id: "LED-LIGHT-&-SWITCHGEAR",
+        title: "LED LIGHT FOR PANELBOARD & SWITCHGEAR",
+        productImg: led1,
+        application: "",
+        models: ["SAI LCL LED"],
+        featuresH: "features",
+        features: [
+          "T5 Fluorescent Cabinet Lamp",
+          "High brightness, small size with on/off switch ",
+          "Long service life non flicker & can start by low voltage",
+          "Energy Saving with Opal Cover, Or with Striate Cover",
+        ],
+        description: "",
+        workingH: "",
+        workingDetails: [
+          // "T5 Fluorescent Cabinet Lamp",
+          // "High brightness, small size with on/off switch ",
+          // "Long service life non flicker & can start by low voltage",
+          // "Energy Saving with Opal Cover, Or with Striate Cover",
+        ],
+        construtionH: "",
+        constrution: [],
+        tests: [],
+        intended: "",
+        uses: [],
+        Installation: "",
+        instructions: [],
+        remark: "",
+        recommendation: "",
+        otherImages: [led3, led4, led2],
       },
+     
     ],
   },
 ];

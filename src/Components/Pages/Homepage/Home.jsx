@@ -1,7 +1,8 @@
 import React from 'react'
 import  Carousel from '../../Hero/Carousel'
-import Cards from './ProductCards/Cards';
+// import Cards from './ProductCards/Cards';
 import Products from '../ProductPage/Products';
+import Cards from '../../ProductCards/Cards';
 
 const Home = () => {
   return (

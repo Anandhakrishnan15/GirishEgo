@@ -144,6 +144,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+      flex-direction: column;
+      width: 100%;
 
   .decriptions {
     width: 80%;
