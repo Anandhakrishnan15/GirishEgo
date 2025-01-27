@@ -66,7 +66,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-height: 500px; /* Collapsed by default */
+ height: auto; /* Collapsed by default */
  border: none;
   transition: max-height 2s ease, opacity 2s ease;
   h3{
