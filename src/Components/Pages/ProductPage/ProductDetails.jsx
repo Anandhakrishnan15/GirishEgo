@@ -79,21 +79,25 @@ const ProductDetails = () => {
                   <p>{info.description}</p>
                 </div>
               )}
+
               {/* woking details container */}
+
               <div className="working-testingDetailscontainer">
-                <div className="workingHolder">
-                  <h4>{info.workingH}:</h4>
-                  <ul>
-                    {info.workingDetails.map((detail, index) => (
-                      <li key={index}>{detail}</li>
-                    ))}
-                  </ul>
-                  <ol>
-                    {info.tests.map((test, iTest) => (
-                      <li key={iTest}>{test}</li>
-                    ))}
-                  </ol>
-                </div>
+                {info.Installation && (
+                  <div className="workingHolder">
+                    <h4>{info.workingH}</h4>
+                    <ul>
+                      {info.workingDetails.map((detail, index) => (
+                        <li key={index}>{detail}</li>
+                      ))}
+                    </ul>
+                    <ol>
+                      {info.tests.map((test, iTest) => (
+                        <li key={iTest}>{test}</li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
                 {/* instaltion containder */}
                 {info.Installation && (
                   <div className="instalaationcontainer">
@@ -134,7 +138,8 @@ const ProductDetails = () => {
                   </div>
                 )}
               </div>
-              <div style={{ margin: "20px", color: "rgb(14, 51, 108)" }}>
+
+              <div style={{ margin: "20px", color: "rgb(14, 51, 108)",display:'flex',}}>
                 <h1>More info</h1>
               </div>
               {/* other Images container */}
