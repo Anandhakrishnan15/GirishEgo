@@ -69,15 +69,12 @@
   padding: 10px;
   margin: 0;
   height: 528px;
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
     max-height: 550px; /* Max height to allow scrolling */
   overflow-y: auto; /* Enable vertical scrolling */
   justify-content: space-between;
  border: none;
-  display: grid; /* Use grid for card-like layout */
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Create a responsive grid */
-  gap: 20px; /* Add space between cards */
   h3{
     color: RGB(15, 100, 174);
     text-transform: capitalize;
@@ -90,7 +87,7 @@
 
 .dropdown-menu:before {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 46px;
   left: 75%;
   z-index:22 ;
