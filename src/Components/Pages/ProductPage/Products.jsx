@@ -173,7 +173,7 @@ import hat2 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat i
 import hat3 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (3).png";
 import hat4 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (4).png";
 import hat5 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (5).png";
-import hat6 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (6).png";
+// import hat6 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (6).png";
 // PRESSURE COMPENSATION DEVICE
 import pcd1 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (1).png";
 import pcd2 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (2).png";
@@ -251,8 +251,8 @@ const Products = [
       },
       //aluminum heaters data
       {
-        id: "End-Fixing",
-        title: "End Fixing Type (SAL)",
+        id: "Aluminium-Space-Heaters ",
+        title: "Aluminium Space Heaters ",
         productImg: endfixingtype,
         application: "For Panel Boards & Switchgear Industries",
         models: ["SH", "SHISS", "SHIL"],
@@ -373,15 +373,18 @@ const Products = [
         features: [
           "Pressure clamp connectors",
           "Dynamic heating up",
-          "Wide voltage range Temperature limiting Energy saving",
+          "Wide voltage range ",
+          "Temperature limiting",
+          "Energy saving",
           "DIN rail mounted",
           "Quick installation",
         ],
-        description: "",
+        description:
+          "Prevents condensation and maintains minimum temperature with an aluminum body for even heat distribution. Easy installation with pressure clamp connectors and mounting holes.",
         workingH: "Working Principle & Features",
         workingDetails: [
-          "These heaters are used in enclosures where damage from condensation must be prevented, or where the temperature must be maintained above a minimum value. ",
-          ". The aluminum profile heater body design has a chimney effect to distribute heat evenly. ",
+          "These heaters are used in enclosures where damage from condensation must be prevented, or where the temperature must be maintained above a minimum value.",
+          "The aluminum profile heater body design has a chimney effect to distribute heat evenly.",
           "The pressure clamp connectors save time and simplify installation.",
           "Mounting holes provided on one side.",
         ],
@@ -481,11 +484,12 @@ const Products = [
           "Temperature safety cut-out",
           "DIN rail mounted",
         ],
-        description: "",
+        description:
+          "Compact high-performance fan heater prevents condensation and ensures even air distribution in enclosures. Available with or without a fan.",
         workingH: "Working Principle & Features",
         workingDetails: [
-          "The compact high-performance fan heater prevents formation of condensation in control or systems and provides an evenly distributed interior air temperature in enclosures. ",
-          "This fan heater is available without fan (SHV 031) as well as with fan (SHVL 031)",
+          "The compact high-performance fan heater prevents formation of condensation in control or systems and provides an evenly distributed interior air temperature in enclosures.",
+          "This fan heater is available without fan (SHV 031) as well as with fan (SHVL 031).",
         ],
         tests: [],
         intended: "",
@@ -514,10 +518,11 @@ const Products = [
           "Din Rail & Screw mounting Ready to use with Strain relief",
           "Maintenance Free",
         ],
-        description: "",
+        description:
+          "Compact convection heater prevents condensation, temperature fluctuations, and frost in hazardous areas.",
         workingH: "Working Principle & Features",
         workingDetails: [
-          "Compact convection heater is for use in hazardous areas for prevention of formation of condensation, temperature fluctuations, and for protection against frost in control and switch cabinets, as well as in measuring equipment. ",
+          "Compact convection heater is for use in hazardous areas for prevention of formation of condensation, temperature fluctuations, and for protection against frost in control and switch cabinets, as well as in measuring equipment.",
         ],
         tests: [],
         intended: "",
@@ -543,11 +548,12 @@ const Products = [
           "High Heating Performance",
           "Inbuilt Thermostat (Optional)",
         ],
-        description: "",
+        description:
+          "High-performance fan heater prevents condensation and frost, ensuring even air distribution. Features double insulation, contact protection, and optional thermostat.",
         workingH: "Working Principle & Features",
         workingDetails: [
           "The compact, high-performance fan heater prevents condensation and frost while ensuring evenly distributed interior air temperature in enclosures containing electrical or electronic components.",
-          "Its plastic housing offers double insulation and contact protection. The fan heater is available with an integrated thermostat for precise temperature control. ",
+          "Its plastic housing offers double insulation and contact protection. The fan heater is available with an integrated thermostat for precise temperature control.",
           "Designed as a stationary unit, the SCS 0130 is intended for wall mounting, while the SCS 0030 is recommended for installation at the bottom of the enclosure.",
         ],
         tests: [],
@@ -573,10 +579,11 @@ const Products = [
           "Dynamic Heating",
           "Energy Saving & Compact",
         ],
-        description: "",
+        description:
+          "Small heaters prevent condensation and maintain minimum operating temperature in compact enclosures like camera housings.",
         workingH: "Working Principle & Features",
         workingDetails: [
-          "These small heaters are designed to ensure prevention of condensation along with minimum operating temperature in small enclosure like camera enclosure etc,",
+          "These small heaters are designed to ensure prevention of condensation along with minimum operating temperature in small enclosures like camera enclosures, etc.",
         ],
         tests: [],
         intended: "",
@@ -753,7 +760,8 @@ const Products = [
           "Each with wide adjustable temperature range",
           "Actual size DIN rail mountable",
         ],
-        description: "",
+        description:
+          "ZSR-011 features two separate thermostats for independent heating and cooling control, with wide adjustment ranges and color-coded functions.",
         workingH: "Principle of Operation",
         workingDetails: [
           "The ZSR-011 houses two separate thermostats, allowing the independent control of heating and cooling or other equipment. Both thermostats offer wide adjustment ranges and are color coded for easy function recognition.",
@@ -782,11 +790,12 @@ const Products = [
           "High switching capacity",
           "DIN rail mountable",
         ],
-        description: "",
+        description:
+          "MSFR-012 regulates enclosure humidity by activating heaters at set levels to prevent condensation and corrosion. Can also control cooling fans and warning devices.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "The MSFR-012 is designed to control the relative air humidity inside of enclosures. When connected to an enclosure heater, (de-humidifier), it will turn the heater on at the set humidity level in order to raise the dew point. ",
-          "This helps prevent damage and malfunction of electronic components caused by condensation and corrosion*. The MSFR-012 can also be used to control cooling fans, warning lights or other devices.",
+          "The MSFR-012 is designed to control the relative air humidity inside of enclosures. When connected to an enclosure heater (de-humidifier), it will turn the heater on at the set humidity level in order to raise the dew point.",
+          "This helps prevent damage and malfunction of electronic components caused by condensation and corrosion. The MSFR-012 can also be used to control cooling fans, warning lights, or other devices.",
         ],
         construtionH: "",
         constrution: [],
@@ -814,10 +823,11 @@ const Products = [
           "Clip Fixing",
           "Temperature-compensated",
         ],
-        description: "",
+        description:
+          "ESFR-012 electronic hygrostat controls humidity in enclosures by activating heaters to prevent condensation. Features an LED indicator for operation status.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "The ESFR-012 electronic hygrostat senses the relative humidity in an enclosure with electric/electronic components and turns on a heater at the set point, helping prevent the formation of condensation in the enclosure. ",
+          "The ESFR-012 electronic hygrostat senses the relative humidity in an enclosure with electric/electronic components and turns on a heater at the set point, helping prevent the formation of condensation in the enclosure.",
           "The LED integrated in the adjustment knob is lit when the connected heater is in operation.",
         ],
         construtionH: "",
@@ -846,7 +856,8 @@ const Products = [
           "DIN rail mounted",
           "Temperature-compensated",
         ],
-        description: "",
+        description:
+          "Electronic sensor controls heater and fan operation based on ambient temperature and humidity.",
         workingH: "Principle of Operation",
         workingDetails: [
           "Electronic temperature and humidity sensor can control the on & off of the heater and fan according to ambient temperature and relative humidity.",
@@ -877,11 +888,12 @@ const Products = [
           "Changeover contact",
           "DIN rail mounted",
         ],
-        description: "",
+        description:
+          "ET 011 electronic thermostat regulates DC 24V equipment with low hysteresis, controlling heating, cooling, and signal devices through a change-over contact.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "Electronic thermostat for regulating high performance DC 24V equipment. Heating or cooling appliances as well as signal devices can be switched via the potential free change-over contact. ",
-          "In comparison to mechanical thermostats, the ET 011 has a low hysteresis making the switching point",
+          "Electronic thermostat for regulating high-performance DC 24V equipment. Heating or cooling appliances as well as signal devices can be switched via the potential-free change-over contact.",
+          "In comparison to mechanical thermostats, the ET 011 has a low hysteresis making the switching point more accurate.",
         ],
         construtionH: "",
         constrution: [],
@@ -908,10 +920,11 @@ const Products = [
           "High switching capacity",
           "DIN rail mounted",
         ],
-        description: "",
+        description:
+          "Electronic thermostats control heater operation based on ambient temperature.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "Electronic Thermostats can control the on & off of heater according to the ambient temperature.",
+          "Electronic Thermostats can control the on & off of the heater according to the ambient temperature.",
         ],
         construtionH: "",
         constrution: [],
@@ -938,11 +951,12 @@ const Products = [
           "High switching capacity",
           "Clip mounted",
         ],
-        description: "",
+        description:
+          "Compact mechanical thermostat for regulating and monitoring heaters in hazardous areas. Features high accuracy, long lifespan, and direct control of heaters.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "Compact small mechanical thermostat for temperature regulation and monitoring of heaters, for example in transmitter cabinets, control panels and measuring equipment which are deployed in areas with explosion hazard. ",
-          "The special switch construction enables high response accuracy, small switch temperature difference and a very long service life. ",
+          "Compact small mechanical thermostat for temperature regulation and monitoring of heaters, for example in transmitter cabinets, control panels, and measuring equipment which are deployed in areas with explosion hazard.",
+          "The special switch construction enables high response accuracy, small switch temperature difference, and a very long service life.",
           "High switching performance allows direct control of the heaters.",
         ],
         construtionH: "",
@@ -965,7 +979,8 @@ const Products = [
         models: ["SFTO-011", "SFTS-011"],
         featuresH: "features",
         features: ["Small Size", "Default Temp. Setting ", "Easy to install"],
-        description: "",
+        description:
+          "Tamperproof thermostats regulate heaters or signal devices based on temperature changes, with pre-set contact breakers for SFTO-011 and contact makers for SFTS-011.",
         workingH: "Tamperproof (Pre-set) Thermostat SFTO-011",
         workingDetails: [
           "Contact breaker/NC (red casing) for regulating heaters or for switching signal devices when temperature has fallen below the minimum value. The contact opens when temperature is rising.",
@@ -997,12 +1012,13 @@ const Products = [
           "High switching capacity",
           "Clip Fixing",
         ],
-        description: "",
+        description:
+          "Two thermostats in one casing for independent control of heaters and cooling equipment with temperature offset, featuring tamper-proof pre-set contacts.",
         workingH: "Two thermostats in one casing:",
         workingDetails: [
-          "Tamper-proof (Pre-set) Thermostat/Contact breaker (NC) for regulating heaters or for switching signal devices, when temperature has fallen below the minimum value. The contact opens when temperature is rising. ",
-          "Tamper-proof (Pre-set) Thermostat/Contact maker (NO) for regulating filter fans, heat exchangers or for switching signal devices when temperature limit has been exceeded. The contact closes when temperature is rising. ",
-          "Heaters and cooling equipment can be switched independently from each other with a temperature offset as opposed to the usual change-over contacts.",
+          "Tamper-proof (pre-set) thermostat/contact breaker (NC) for regulating heaters or switching signal devices when the temperature falls below the minimum value. The contact opens when the temperature rises.",
+          "Tamper-proof (pre-set) thermostat/contact maker (NO) for regulating filter fans, heat exchangers, or switching signal devices when the temperature limit is exceeded. The contact closes when the temperature rises.",
+          "Heaters and cooling equipment can be switched independently from each other with a temperature offset, unlike usual change-over contacts.",
         ],
         construtionH: "",
         constrution: [],
@@ -1029,11 +1045,12 @@ const Products = [
           "High Switching Capacity",
           "Clip Fixing",
         ],
-        description: "",
+        description:
+          "Tamper-proof thermostat for regulating heaters and switching signal devices, combined with a hygrosat for controlling humidity and preventing condensation.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "Tamper-proof (Pre-set) Thermostat/Contact breaker (NC) for regulating heaters or for switching signal devices, when temperature has fallen below the minimum value.",
-          " The contact opens when temperature is rising.The SR-3118 Hygrostat senses the relative humidity in an enclosure with electric/electronic components and turn on a heater at the set point, helping prevent the formation of condensation in the enclosure. ",
+          "Tamper-proof (pre-set) thermostat/contact breaker (NC) for regulating heaters or switching signal devices when the temperature falls below the minimum value.",
+          "The contact opens when the temperature rises. The SR-3118 Hygrostat senses the relative humidity in an enclosure with electric/electronic components and turns on a heater at the set point, helping prevent the formation of condensation in the enclosure.",
         ],
         construtionH: "Uses:",
         constrution: [
@@ -1067,11 +1084,12 @@ const Products = [
           "Set Temperature",
           "High switching capacity",
         ],
-        description: "",
+        description:
+          "Compact mechanical thermostat for regulating and monitoring heaters in hazardous areas, offering high accuracy, long service life, and direct heater control.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "Compact small mechanical thermostat for temperature regulaon and monitoring of heaters, for example in transmier cabinets, control panels and measuring equipment which are deployed in areas with explosion hazard ",
-          "The special switch construcon enables high response accuracy, small switch temperature difference and a very long service life",
+          "Compact small mechanical thermostat for temperature regulation and monitoring of heaters, for example in transmitter cabinets, control panels, and measuring equipment deployed in areas with explosion hazard.",
+          "The special switch construction enables high response accuracy, small switch temperature difference, and a very long service life.",
           "High switching performance allows direct control of the heaters.",
         ],
         construtionH: "",
@@ -1083,7 +1101,7 @@ const Products = [
         instructions: [],
         remark: "",
         recommendation: "",
-        otherImages: [hat2, hat3, hat6, hat4, hat5],
+        otherImages: [hat3, hat4, hat2, hat5],
       },
     ],
   },
@@ -1104,15 +1122,16 @@ const Products = [
           "Waterproof Membrane (SDA-284)",
           "Easy to Install",
         ],
-        description: "",
+        description:
+          "Pressure compensation plug ensures a protected environment for electrical components by regulating pressure and preventing dust, humidity, and water ingress.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "It has become more and more important to provide a protected enclosure environment for and crucial electrical and electronic components.",
+          "It has become more important to provide a protected enclosure environment for crucial electrical and electronic components.",
           "In a tightly closed enclosure, pressure differentials can occur during extreme temperature variations, such as day/night operation.",
           "When this occurs, the risk of dust and humidity being absorbed into the control panel increases dramatically.",
           "The specially designed pressure compensation plug SDA 084 permits a controlled change in pressure.",
-          "It can be installed easily in any enclosure. Because of the pressure compensation plug's high degree of protection (IP45 for SDA-084 & Ip66 FOR SDA-284), the protection type of the enclosure will not be affected",
-          "IN SDA-284, Even with a slight overpressure. a waterproof membrane inside the Plug allows the humidity to escape whilst blocking water and dirt from entering the enclosure",
+          "It can be installed easily in any enclosure. Because of the plug's high degree of protection (IP45 for SDA-084 & IP66 for SDA-284), the protection type of the enclosure will not be affected.",
+          "In SDA-284, even with slight overpressure, a waterproof membrane inside the plug allows humidity to escape while blocking water and dirt from entering the enclosure.",
         ],
         construtionH: "Installation of SDA-084",
         constrution: [
@@ -1147,12 +1166,13 @@ const Products = [
           "Holding for documents on cabinet and enclosure",
           "Easy to install onto cabinet and enclosure",
         ],
-        description: "",
+        description:
+          "This versatile document pocket is ideal for storing important documents in enclosures or server cabinets, offering easy mounting and secure attachment in harsh environments.",
         workingH: "Principle of Operation",
         workingDetails: [
-          "This Doc pocket suitable for use with any enclosure or server cabinet",
-          "The holder allows easy mounting onto any surface to provide convenient storage for valuable and important documents like wiring diagrams, user guides, certifications or catalogues that are used and required alongside the item that is housed in the enclosure.",
-          "By using 4 screw holes, the holder provides a strong attachment, even in harsh environments. This document pocket is a versatile server cabinet and enclosure accessory that can be used across a wide range of applications.",
+          "This document pocket is suitable for use with any enclosure or server cabinet.",
+          "The holder allows easy mounting onto any surface to provide convenient storage for valuable and important documents like wiring diagrams, user guides, certifications, or catalogs that are required alongside the housed item.",
+          "Using 4 screw holes, the holder ensures a strong attachment, even in harsh environments. This document pocket is a versatile server cabinet and enclosure accessory for a wide range of applications.",
         ],
         construtionH: "",
         constrution: [],
@@ -1179,7 +1199,8 @@ const Products = [
           "Long service life non flicker & can start by low voltage",
           "Energy Saving with Opal Cover, Or with Striate Cover",
         ],
-        description: "",
+        description:
+          "T5 Fluorescent Cabinet Lamp offering high brightness, long service life, energy saving, and reliable operation at low voltage.",
         workingH: "",
         workingDetails: [
           // "T5 Fluorescent Cabinet Lamp",
@@ -1198,7 +1219,6 @@ const Products = [
         recommendation: "",
         otherImages: [led3, led4, led2],
       },
-     
     ],
   },
 ];

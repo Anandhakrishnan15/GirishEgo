@@ -170,7 +170,7 @@ const Navbar = () => {
                         onClick={handleLinkClick}
                         style={{ cursor: "pointer" }}
                       >
-                        <h3>{product.name}</h3>
+                        <h3>{product.name.toLowerCase()}</h3>
                       </NavLink>
                     ) : (
                       <h3
@@ -182,7 +182,7 @@ const Navbar = () => {
                           padding: "10px",
                         }}
                       >
-                        {product.name}
+                        {product.name.toLowerCase()}
                       </h3>
                     )}
 
@@ -197,7 +197,7 @@ const Navbar = () => {
                             onClick={handleLinkClick}
                             to={`/Products/${product.id}/${subProduct.id}`}
                           >
-                            {subProduct.title}
+                            {subProduct.title.toLowerCase()}
                           </NavLink>
                         </li>
                       ))}

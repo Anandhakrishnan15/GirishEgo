@@ -83,7 +83,7 @@ const ProductDetails = () => {
               {/* woking details container */}
 
               <div className="working-testingDetailscontainer">
-                {info.Installation && (
+                {info.workingH && (
                   <div className="workingHolder">
                     <h4>{info.workingH}</h4>
                     <ul>
@@ -139,7 +139,13 @@ const ProductDetails = () => {
                 )}
               </div>
 
-              <div style={{ margin: "20px", color: "rgb(14, 51, 108)",display:'flex',}}>
+              <div
+                style={{
+                  margin: "20px",
+                  color: "rgb(14, 51, 108)",
+                  display: "flex",
+                }}
+              >
                 <h1>More info</h1>
               </div>
               {/* other Images container */}
