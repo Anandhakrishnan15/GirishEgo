@@ -251,7 +251,7 @@ const Products = [
       },
       //aluminum heaters data
       {
-        id: "Aluminium-Space-Heaters ",
+        id: "Aluminium-Space-Heaters",
         title: "Aluminium Space Heaters ",
         productImg: endfixingtype,
         application: "For Panel Boards & Switchgear Industries",
