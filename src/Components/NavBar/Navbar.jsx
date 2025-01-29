@@ -144,7 +144,7 @@ const Navbar = () => {
           <li
             className="dropdown"
             onMouseEnter={() => setDropdown(true)}
-            onMouseLeave={() => setDropdown(false)}
+            onMouseLeave={() => setDropdown(1)}
           >
             <span
               //

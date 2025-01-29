@@ -6,17 +6,20 @@ import Home from "./Components/Pages/Homepage/Home";
 import AboutUs from "./Components/Pages/AboutUsPage/AboutUs";
 import ContactUs from "./Components/Pages/ContactUsPage/ContactUs";
 import Resources from "./Components/Pages/ResourcesPage/Resources";
-import Products from "./Components/Pages/ProductPage/Products";
+// import Products from "./Components/Pages/ProductPage/Products";
 import ProductDetails from "./Components/Pages/ProductPage/ProductDetails";
 import AnimatedElements from "./Components/Animations/AnimatedElements";
 import PoductsId from "./Components/Pages/Homepage/PoductsId";
 import Footer from "./Components/footer/Footer";
+import { ToastContainer } from "react-toastify";
+// import contactDetails from "./Components/Pages/ContactUsPage/contactDetails";
 
 function App() {
   return (
     <>
       <Navbar />
       <AnimatedElements />
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About-us" element={<AboutUs />} />

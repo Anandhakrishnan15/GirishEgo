@@ -117,7 +117,7 @@
 }
 .sub-dropdown-menu.visible {
   display: flex;
-  max-height: 200px; /* Adjust based on content */
+  /* max-height: 200px; Adjust based on content */
   opacity: 1;
 }
 
@@ -254,13 +254,23 @@ transform: rotate(180deg);
   left: 71%;
 }
 } */
+ /* ✅ Small Laptops (993px - 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  
+}
+/* ✅ Tablets (769px - 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+
+  }
 
  /* @media (max-width:768px)*/
  @media (max-width:768px) {
   nav .ham-menu{
     display: flex;
   }
-
+.dropdown-menu:before{
+  display: none;
+}
   .navlistcontainer{
      display: flex;
   position: fixed;

@@ -6,10 +6,9 @@ import "./Footer.css";
 
 const Footer = () => {
   const navLinks = [
-    { id: 1, name: "Home", href: "#home" },
-    { id: 2, name: "About Us", href: "#about" },
-    { id: 3, name: "Services", href: "#services" },
-    { id: 4, name: "Contact", href: "#contact" },
+    { id: 1, name: "Home", href: "/" },
+    { id: 2, name: "About Us", href: "/About-us" },
+    { id: 3, name: "Contact Us", href: "/Contact-us" },
   ];
 
   const contactInfo = [
@@ -17,22 +16,21 @@ const Footer = () => {
       id: 1,
       label: "Phone",
       values: [
-        { number: "+91 9820157929", link: "tel:+919820157929" },
-        { number: "+91 2222068032", link: "tel:+912222068032" },
-        { number: "+91 22083857", link: "tel:+9122083857" },
+        { number: "+91 22 22068032", link: "tel:+912222068032" },
+        { number: "+91 22 22083857", link: "tel:+912222083857" },
       ],
     },
     {
       id: 2,
       label: "WhatsApp",
-      value: "+91 123 456 7890",
-      link: "https://wa.me/911234567890",
+      value: "+91 9769281724 ",
+      link: "https://wa.me/919769281724",
     },
     {
       id: 3,
       label: "Email",
-      value: "info@example.com",
-      link: "mailto:info@example.com",
+      value: "sales@girishego.com",
+      link: "mailto:sales@girishego.com",
     },
   ];
 
