@@ -2,16 +2,19 @@ import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router";
 import Navbar from "./Components/NavBar/Navbar";
-import Home from "./Components/Pages/Homepage/Home";
-import AboutUs from "./Components/Pages/AboutUsPage/AboutUs";
-import ContactUs from "./Components/Pages/ContactUsPage/ContactUs";
-import Resources from "./Components/Pages/ResourcesPage/Resources";
-// import Products from "./Components/Pages/ProductPage/Products";
-import ProductDetails from "./Components/Pages/ProductPage/ProductDetails";
+import Home from "./Pages/Homepage/Home";
+import AboutUs from "./Pages/AboutUsPage/AboutUs";
+import ContactUs from "./Pages/ContactUsPage/ContactUs";
+import Resources from "./Pages/ResourcesPage/Resources";
+// import Products from "./Pagess/";
+import ProductDetails from "./Pages/ProductPage/ProductDetails";
 import AnimatedElements from "./Components/Animations/AnimatedElements";
-import PoductsId from "./Components/Pages/Homepage/PoductsId";
+import PoductsId from "./Pages/ProductPage/PoductsId";
 import Footer from "./Components/footer/Footer";
 import { ToastContainer } from "react-toastify";
+import { CallProvider } from "./global/CallContext";
+import PanelSpaceHeatersCalculator from "./Pages/ResourcesPage/ResourcespagesComponents/calculator/PanelSpaceHeatersCalculato";
+import Application from "./Pages/ResourcesPage/ResourcespagesComponents/Application/Application";
 // import contactDetails from "./Components/Pages/ContactUsPage/contactDetails";
 
 function App() {
@@ -20,11 +23,19 @@ function App() {
       <Navbar />
       <AnimatedElements />
       <ToastContainer />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About-us" element={<AboutUs />} />
         <Route path="/Contact-us" element={<ContactUs />} />
-        <Route path="/Resources" element={<Resources />} />
+        <Route path="/Resources" element={<Resources />}>
+          {/* Nested Routes for Resource1 and Resource2 */}
+          <Route
+            path="heat-calculator"
+            element={<PanelSpaceHeatersCalculator />}
+          />
+          <Route path="application" element={<Application />} />
+        </Route>
         {/* <Route path="/Products" element={<Products />} /> */}
         {/* Product-specific routes */}
         <Route path="/Products/:productId" element={<PoductsId />} />
@@ -33,6 +44,7 @@ function App() {
           element={<ProductDetails />}
         />
       </Routes>
+
       <Footer />
     </>
   );
