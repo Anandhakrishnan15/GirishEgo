@@ -1,8 +1,8 @@
 import React from 'react'
-import  Carousel from '../../Hero/Carousel'
-// import Cards from './ProductCards/Cards';
-import Products from '../ProductPage/Products';
-import Cards from '../../ProductCards/Cards';
+import Carousel from "../../Components/Hero/Carousel";
+// import Cards from '../../Components/Hero';
+import Products from '../../Data/Products';
+import Cards from '../../Components/ProductCards/Cards';
 
 const Home = () => {
   return (

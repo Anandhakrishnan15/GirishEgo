@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./contact.css";
-import CRS from "../../../assets/Images/contact-Us-page/contact-us page-CS-image.webp";
+import CRS from "../../assets/Images/contact-Us-page/contact-us page-CS-image.webp";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const ContactUs = () => {

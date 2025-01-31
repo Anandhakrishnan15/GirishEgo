@@ -1,6 +1,6 @@
 import React from 'react'
-import Cards from '../../ProductCards/Cards'
-import Products from "../ProductPage/Products";
+import Cards from '../../Components/ProductCards/Cards'
+import Products from "../../Data/Products";
 import { useParams } from 'react-router-dom';
 
 const PoductsId = () => {

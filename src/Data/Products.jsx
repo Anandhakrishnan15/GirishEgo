@@ -1,197 +1,197 @@
-import boxtypespace from "../../../assets/Images/ptoductsImg/boxtypeheatersimg/boxtypespace.jpeg";
-import endfixingtype from "../../../assets/Images/ptoductsImg/endfixingtype.jpeg";
-import spaceheaters from "../../../assets/Images/ptoductsImg/space_Heaters_Img/spaceheaters.jpeg";
-import table1 from "../../../assets/Images/ptoductsImg/space_Heaters_Img/alsoAvalableTable.png";
-import table2 from "../../../assets/Images/ptoductsImg/space_Heaters_Img/Tech_table.png";
-import diagram from "../../../assets/Images/ptoductsImg/space_Heaters_Img/digram.png";
-import alsoavalabel from "../../../assets/Images/ptoductsImg/space_Heaters_Img/asloavalibaelProducrs.png";
+import boxtypespace from "../assets/Images/ptoductsImg/boxtypeheatersimg/boxtypespace.jpeg";
+import endfixingtype from "../assets/Images/ptoductsImg/endfixingtype.jpeg";
+import spaceheaters from "../assets/Images/ptoductsImg/space_Heaters_Img/spaceheaters.jpeg";
+import table1 from "../assets/Images/ptoductsImg/space_Heaters_Img/alsoAvalableTable.png";
+import table2 from "../assets/Images/ptoductsImg/space_Heaters_Img/Tech_table.png";
+import diagram from "../assets/Images/ptoductsImg/space_Heaters_Img/digram.png";
+import alsoavalabel from "../assets/Images/ptoductsImg/space_Heaters_Img/asloavalibaelProducrs.png";
 // 
-import boxheaterimg1 from "../../../assets/Images/ptoductsImg/boxtypeheatersimg/imgs (1).png";
-import boxheaterimg2 from "../../../assets/Images/ptoductsImg/boxtypeheatersimg/imgs (2).png";
-import boxheaterimg3 from "../../../assets/Images/ptoductsImg/boxtypeheatersimg/imgs (3).png";
-import boxheaterimg4 from "../../../assets/Images/ptoductsImg/boxtypeheatersimg/imgs (4).png";
+import boxheaterimg1 from "../assets/Images/ptoductsImg/boxtypeheatersimg/imgs (1).png";
+import boxheaterimg2 from "../assets/Images/ptoductsImg/boxtypeheatersimg/imgs (2).png";
+import boxheaterimg3 from "../assets/Images/ptoductsImg/boxtypeheatersimg/imgs (3).png";
+import boxheaterimg4 from "../assets/Images/ptoductsImg/boxtypeheatersimg/imgs (4).png";
 // 
-import aluimg1 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (1).png";
-import aluimg2 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (2).png";
-import aluimg3 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (3).png";
-import aluimg4 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (4).png";
-import aluimg5 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (5).png";
-import aluimg6 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (6).png";
-import aluimg7 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (7).png";
-import aluimg8 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (8).png";
-import aluimg9 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (9).png";
-import aluimg10 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (10).png";
-import aluimg11 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (11).png";
-import aluimg12 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (12).png";
-import aluimg13 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (13).png";
-import aluimg14 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (14).png";
-import aluimg15 from "../../../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (15).png";
+import aluimg1 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (1).png";
+import aluimg2 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (2).png";
+import aluimg3 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (3).png";
+import aluimg4 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (4).png";
+import aluimg5 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (5).png";
+import aluimg6 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (6).png";
+import aluimg7 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (7).png";
+import aluimg8 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (8).png";
+import aluimg9 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (9).png";
+import aluimg10 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (10).png";
+import aluimg11 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (11).png";
+import aluimg12 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (12).png";
+import aluimg13 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (13).png";
+import aluimg14 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (14).png";
+import aluimg15 from "../assets/Images/ptoductsImg/aluminumheratersimg/alunimu-heaters-Img (15).png";
 // import PTC enclos heaters
-import PTC1 from "../../../assets/Images/ptoductsImg/ptc-heatersimgs/pta (1).png";
-import PTC2 from "../../../assets/Images/ptoductsImg/ptc-heatersimgs/pta (2).png";
-import PTC3 from "../../../assets/Images/ptoductsImg/ptc-heatersimgs/pta (3).png";
-import PTC4 from "../../../assets/Images/ptoductsImg/ptc-heatersimgs/pta (4).png";
-import PTC5 from "../../../assets/Images/ptoductsImg/ptc-heatersimgs/pta (5).png";
-import PTC6 from "../../../assets/Images/ptoductsImg/ptc-heatersimgs/pta (6).png";
+import PTC1 from "../assets/Images/ptoductsImg/ptc-heatersimgs/pta (1).png";
+import PTC2 from "../assets/Images/ptoductsImg/ptc-heatersimgs/pta (2).png";
+import PTC3 from "../assets/Images/ptoductsImg/ptc-heatersimgs/pta (3).png";
+import PTC4 from "../assets/Images/ptoductsImg/ptc-heatersimgs/pta (4).png";
+import PTC5 from "../assets/Images/ptoductsImg/ptc-heatersimgs/pta (5).png";
+import PTC6 from "../assets/Images/ptoductsImg/ptc-heatersimgs/pta (6).png";
 // import combi heatrs images
-import combi1 from "../../../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (1).png";
-import combi2 from "../../../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (2).png";
-import combi4 from "../../../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (4).png";
-import combi3 from "../../../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (3).png";
-import combi5 from "../../../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (5).png";
+import combi1 from "../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (1).png";
+import combi2 from "../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (2).png";
+import combi4 from "../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (4).png";
+import combi3 from "../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (3).png";
+import combi5 from "../assets/Images/ptoductsImg/combi-heaters-Imgs/combi (5).png";
 // importing the havey duty heaters images
 
-import HDH1 from "../../../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (1).png";
-import HDH2 from "../../../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (2).png";
-import HDH3 from "../../../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (3).png";
-import HDH4 from "../../../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (4).png";
-import HDH5 from "../../../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (5).png";
+import HDH1 from "../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (1).png";
+import HDH2 from "../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (2).png";
+import HDH3 from "../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (3).png";
+import HDH4 from "../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (4).png";
+import HDH5 from "../assets/Images/ptoductsImg/havydudy-heaters_img/HDG (5).png";
 
 //import fan heaters images
-import FanH1 from "../../../assets/Images/ptoductsImg/fanheatersimags/fanheaters (1).png";
-import FanH2 from "../../../assets/Images/ptoductsImg/fanheatersimags/fanheaters (2).png";
-import FanH3 from "../../../assets/Images/ptoductsImg/fanheatersimags/fanheaters (3).png";
-import FanH4 from "../../../assets/Images/ptoductsImg/fanheatersimags/fanheaters (4).png";
-import FanH5 from "../../../assets/Images/ptoductsImg/fanheatersimags/fanheaters (5).png";
-import FanH6 from "../../../assets/Images/ptoductsImg/fanheatersimags/fanheaters (6).png";
-import FanH7 from "../../../assets/Images/ptoductsImg/fanheatersimags/fanheaters (7).png";
+import FanH1 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (1).png";
+import FanH2 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (2).png";
+import FanH3 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (3).png";
+import FanH4 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (4).png";
+import FanH5 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (5).png";
+import FanH6 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (6).png";
+import FanH7 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (7).png";
 // stem heatrs imaga import
-import stem1 from "../../../assets/Images/ptoductsImg/semithermoimages/SH (2).png";
-import stem2 from "../../../assets/Images/ptoductsImg/semithermoimages/SH (1).png";
-import stem3 from "../../../assets/Images/ptoductsImg/semithermoimages/SH (3).png";
-import stem4 from "../../../assets/Images/ptoductsImg/semithermoimages/SH (4).png";
-import stem5 from "../../../assets/Images/ptoductsImg/semithermoimages/SH (5).png";
+import stem1 from "../assets/Images/ptoductsImg/semithermoimages/SH (2).png";
+import stem2 from "../assets/Images/ptoductsImg/semithermoimages/SH (1).png";
+import stem3 from "../assets/Images/ptoductsImg/semithermoimages/SH (3).png";
+import stem4 from "../assets/Images/ptoductsImg/semithermoimages/SH (4).png";
+import stem5 from "../assets/Images/ptoductsImg/semithermoimages/SH (5).png";
 
 
 // round termal heaters
-import round1 from "../../../assets/Images/ptoductsImg/roundheater/roundheaters (2).png";
-import round2 from "../../../assets/Images/ptoductsImg/roundheater/roundheaters (1).png";
-import round3 from "../../../assets/Images/ptoductsImg/roundheater/roundheaters (3).png";
-import round4 from "../../../assets/Images/ptoductsImg/roundheater/roundheaters (4).png";
-import round5 from "../../../assets/Images/ptoductsImg/roundheater/roundheaters (5).png";
-import round6 from "../../../assets/Images/ptoductsImg/roundheater/roundheaters (6).png";
+import round1 from "../assets/Images/ptoductsImg/roundheater/roundheaters (2).png";
+import round2 from "../assets/Images/ptoductsImg/roundheater/roundheaters (1).png";
+import round3 from "../assets/Images/ptoductsImg/roundheater/roundheaters (3).png";
+import round4 from "../assets/Images/ptoductsImg/roundheater/roundheaters (4).png";
+import round5 from "../assets/Images/ptoductsImg/roundheater/roundheaters (5).png";
+import round6 from "../assets/Images/ptoductsImg/roundheater/roundheaters (6).png";
 
 // DLx heaters
-import Dlc1 from "../../../assets/Images/ptoductsImg/dlximages/dlx (1).png";
-import Dlc2 from "../../../assets/Images/ptoductsImg/dlximages/dlx (2).png";
-import Dlc3 from "../../../assets/Images/ptoductsImg/dlximages/dlx (3).png";
-import Dlc4 from "../../../assets/Images/ptoductsImg/dlximages/dlx (4).png";
-import Dlc5 from "../../../assets/Images/ptoductsImg/dlximages/dlx (5).png";
+import Dlc1 from "../assets/Images/ptoductsImg/dlximages/dlx (1).png";
+import Dlc2 from "../assets/Images/ptoductsImg/dlximages/dlx (2).png";
+import Dlc3 from "../assets/Images/ptoductsImg/dlximages/dlx (3).png";
+import Dlc4 from "../assets/Images/ptoductsImg/dlximages/dlx (4).png";
+import Dlc5 from "../assets/Images/ptoductsImg/dlximages/dlx (5).png";
 //  "ENCLOSURE-THERMOSTAT" images 
-import ET1 from "../../../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (4).png";
-import ET2 from "../../../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (1).png";
-import ET3 from "../../../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (2).png";
-import ET4 from "../../../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (3).png";
+import ET1 from "../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (4).png";
+import ET2 from "../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (1).png";
+import ET3 from "../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (2).png";
+import ET4 from "../assets/Images/ptoductsImg/ENCLOSURE-THERMOSTAT-IMAGES/ENTS (3).png";
 // dual "ENCLOSURE-THERMOSTAT" images 
-import DT1 from "../../../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (1).png";
-import DT2 from "../../../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (2).png";
-import DT3 from "../../../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (3).png";
-import DT4 from "../../../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (4).png";
-import DT5 from "../../../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (5).png";
+import DT1 from "../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (1).png";
+import DT2 from "../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (2).png";
+import DT3 from "../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (3).png";
+import DT4 from "../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (4).png";
+import DT5 from "../assets/Images/ptoductsImg/dual-thermostat-images/dual-th (5).png";
 // Mechanical HYGROSTAT images
-import MH1 from "../../../assets/Images/ptoductsImg/machinacal-hygrostat-images/MH (1).png";
-import MH2 from "../../../assets/Images/ptoductsImg/machinacal-hygrostat-images/MH (2).png";
-import MH3 from "../../../assets/Images/ptoductsImg/machinacal-hygrostat-images/MH (3).png";
+import MH1 from "../assets/Images/ptoductsImg/machinacal-hygrostat-images/MH (1).png";
+import MH2 from "../assets/Images/ptoductsImg/machinacal-hygrostat-images/MH (2).png";
+import MH3 from "../assets/Images/ptoductsImg/machinacal-hygrostat-images/MH (3).png";
 // ELECTRONIC HYGROSTAT images
-import eh1 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (5).png";
-import eh2 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (1).png";
-import eh3 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (2).png";
-import eh4 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (3).png";
-import eh5 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (4).png";
+import eh1 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (5).png";
+import eh2 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (1).png";
+import eh3 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (2).png";
+import eh4 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (3).png";
+import eh5 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROTHERM IMAGES/eL-HRM (4).png";
 // ELECTRONIC CD THERMOSTAT image 
-import EDC1 from "../../../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (1).png";
-import EDC2 from "../../../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (2).png";
-import EDC3 from "../../../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (3).png";
-import EDC4 from "../../../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (4).png";
-import EDC5 from "../../../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (5).png";
+import EDC1 from "../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (1).png";
+import EDC2 from "../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (2).png";
+import EDC3 from "../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (3).png";
+import EDC4 from "../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (4).png";
+import EDC5 from "../assets/Images/ptoductsImg/ELECTRONIC-DC-THERMOSTATIMAGES/IMG (5).png";
 
 // ELECTRONIC HYGROSTAT images
-import Ehgy1 from "../../../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (1).png";
-import Ehgy2 from "../../../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (2).png";
-import Ehgy3 from "../../../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (3).png";
-import Ehgy4 from "../../../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (4).png";
-import Ehgy5 from "../../../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (5).png";
+import Ehgy1 from "../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (1).png";
+import Ehgy2 from "../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (2).png";
+import Ehgy3 from "../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (3).png";
+import Ehgy4 from "../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (4).png";
+import Ehgy5 from "../assets/Images/ptoductsImg/ELECTRONIC-HYGROSTAT-imags/imgs (5).png";
 
 // ELECTRONIC-THERMOSTAT IMAGES
-import ETH1 from "../../../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (5).png";
-import ETH2 from "../../../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (2).png";
-import ETH3 from "../../../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (3).png";
-import ETH4 from "../../../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (4).png";
-import ETH5 from "../../../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (1).png";
+import ETH1 from "../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (5).png";
+import ETH2 from "../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (2).png";
+import ETH3 from "../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (3).png";
+import ETH4 from "../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (4).png";
+import ETH5 from "../assets/Images/ptoductsImg/ELECTRONIC-THERMOSTATIMAGES/EL-DC-TH (1).png";
 
 // HAZARDOUS AREA THERMOSTAT-IMAGES
-import HAT1 from "../../../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (1).png";
-import HAT2 from "../../../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (2).png";
-import HAT3 from "../../../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (3).png";
-import HAT4 from "../../../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (4).png";
-import HAT5 from "../../../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (5).png";
-import HAT6 from "../../../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (6).png";
+import HAT1 from "../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (1).png";
+import HAT2 from "../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (2).png";
+import HAT3 from "../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (3).png";
+import HAT4 from "../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (4).png";
+import HAT5 from "../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (5).png";
+import HAT6 from "../assets/Images/ptoductsImg/HAZARDOUS AREA THERMOSTAT-IMAGES/IMAGES (6).png";
 // TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES
-import TRM1 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (1).png";
-import TRM2 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (2).png";
-import TRM3 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (3).png";
-import TRM4 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (4).png";
-import TRM5 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (5).png";
-import TRM6 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (6).png";
+import TRM1 from "../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (1).png";
+import TRM2 from "../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (2).png";
+import TRM3 from "../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (3).png";
+import TRM4 from "../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (4).png";
+import TRM5 from "../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (5).png";
+import TRM6 from "../assets/Images/ptoductsImg/TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES/IMGS (6).png";
 
 
 // TEMPER-PROOF MECHANICAL THERMOSTAT IMAGES
-import TRMD1 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (1).png";
-import TRMD2 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (2).png";
-import TRMD3 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (3).png";
-import TRMD4 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (4).png";
-import TRMD5 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (5).png";
-import TRMD6 from "../../../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (6).png";
+import TRMD1 from "../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (1).png";
+import TRMD2 from "../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (2).png";
+import TRMD3 from "../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (3).png";
+import TRMD4 from "../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (4).png";
+import TRMD5 from "../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (5).png";
+import TRMD6 from "../assets/Images/ptoductsImg/TEMPER-PROOF DUAL NO-NC THERMOSTAT IMAGES/IMGS (6).png";
 // Hazardous Area Heater images
-import HazdH1 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (1).png";
-import HazdH2 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (2).png";
-import HazdH3 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (3).png";
-import HazdH4 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (4).png";
-import HazdH5 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (5).png";
-import HazdH6 from "../../../assets/Images/ptoductsImg/Hazardous Area Heater images/img (6).png";
+import HazdH1 from "../assets/Images/ptoductsImg/Hazardous Area Heater images/img (1).png";
+import HazdH2 from "../assets/Images/ptoductsImg/Hazardous Area Heater images/img (2).png";
+import HazdH3 from "../assets/Images/ptoductsImg/Hazardous Area Heater images/img (3).png";
+import HazdH4 from "../assets/Images/ptoductsImg/Hazardous Area Heater images/img (4).png";
+import HazdH5 from "../assets/Images/ptoductsImg/Hazardous Area Heater images/img (5).png";
+import HazdH6 from "../assets/Images/ptoductsImg/Hazardous Area Heater images/img (6).png";
 // Compact High Performance Fan Heater images
-import CHPFH1 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (1).png";
-import CHPFH2 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (2).png";
-import CHPFH3 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (3).png";
-import CHPFH4 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (4).png";
-import CHPFH5 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (5).png";
-import CHPFH6 from "../../../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (6).png";
+import CHPFH1 from "../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (1).png";
+import CHPFH2 from "../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (2).png";
+import CHPFH3 from "../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (3).png";
+import CHPFH4 from "../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (4).png";
+import CHPFH5 from "../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (5).png";
+import CHPFH6 from "../assets/Images/ptoductsImg/Compact High Performance Fan Heater images/img (6).png";
 // small semi =conductor heater
-import ssch1 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (2).png";
-import ssch2 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (1).png";
-import ssch3 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (3).png";
-import ssch4 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (4).png";
-import ssch5 from "../../../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (5).png";
+import ssch1 from "../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (2).png";
+import ssch2 from "../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (1).png";
+import ssch3 from "../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (3).png";
+import ssch4 from "../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (4).png";
+import ssch5 from "../assets/Images/ptoductsImg/SMALL SEMICONDUCTOR HEATER/img (5).png";
 // ELECTRONIC HYGROSTAT 2
-import ehII1 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (1).png";
-import ehII2 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (2).png";
-import ehII3 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (3).png";
-import ehII4 from "../../../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (4).png";
+import ehII1 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (1).png";
+import ehII2 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (2).png";
+import ehII3 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (3).png";
+import ehII4 from "../assets/Images/ptoductsImg/ELECTRONIC HYGROSTAT 2 images/img (4).png";
 // Hazardous Area Thermostat
-import hat1 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (1).png";
-import hat2 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (2).png";
-import hat3 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (3).png";
-import hat4 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (4).png";
-import hat5 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (5).png";
-// import hat6 from "../../../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (6).png";
+import hat1 from "../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (1).png";
+import hat2 from "../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (2).png";
+import hat3 from "../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (3).png";
+import hat4 from "../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (4).png";
+import hat5 from "../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (5).png";
+// import hat6 from "../assets/Images/ptoductsImg/Hazardous Area Thermostat images/img (6).png";
 // PRESSURE COMPENSATION DEVICE
-import pcd1 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (1).png";
-import pcd2 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (2).png";
-import pcd3 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (3).png";
-import pcd4 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (4).png";
-import pcd5 from "../../../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (5).png";
+import pcd1 from "../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (1).png";
+import pcd2 from "../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (2).png";
+import pcd3 from "../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (3).png";
+import pcd4 from "../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (4).png";
+import pcd5 from "../assets/Images/ptoductsImg/PRESSURE COMPENSATION DEVICE images/img (5).png";
  // DOCUMENT POCKET FOR ENCLOSURE
-import dpe1 from "../../../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (1).png";
-import dpe2 from "../../../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (2).png";
-import dpe3 from "../../../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (3).png";
-import dpe4 from "../../../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (4).png";
+import dpe1 from "../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (1).png";
+import dpe2 from "../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (2).png";
+import dpe3 from "../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (3).png";
+import dpe4 from "../assets/Images/ptoductsImg/DOCUMENT POCKET FOR ENCLOSURE/img (4).png";
 
 
 // LED LIGHT FOR PANELBOARD & SWITCHGEAR
-import led1 from "../../../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (2).png";
-import led2 from "../../../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (1).png";
-import led3 from "../../../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (3).png";
-import led4 from "../../../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (4).png";
+import led1 from "../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (2).png";
+import led2 from "../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (1).png";
+import led3 from "../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (3).png";
+import led4 from "../assets/Images/ptoductsImg/LED LIGHT FOR PANELBOARD & SWITCHGEARimgas/img (4).png";
 
 
 

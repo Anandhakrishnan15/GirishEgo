@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "./product.css";
-import Products from "./Products";
+import Products from "../../Data/Products";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaRegHandPointRight } from "react-icons/fa6";
 

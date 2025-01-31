@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css';
 import {Link, NavLink, useLocation} from 'react-router';
-import Products from '../Pages/ProductPage/Products';
-import Res_Support from "../Pages/ResourcesPage/Res_Support"
-import Logo from "../../assets/Images/Logo-main.jpg";
+import Products from '../../Data/Products';
+// import Res_Support from "./Pages/ResourcesPage/Res_Support"
+import Res_Support from "../../Data/Res_Support";
 
+import Logo from "../../assets/Images/Logo-main.jpg";
 const Navbar = () => {
   // const [scrollData, setscrollData] = useState({ y: 0, lastY: 1 });
   // get the postion of the Scroll bar y axis
@@ -144,7 +145,7 @@ const Navbar = () => {
           <li
             className="dropdown"
             onMouseEnter={() => setDropdown(true)}
-            onMouseLeave={() => setDropdown(1)}
+            onMouseLeave={() => setDropdown(false)}
           >
             <span
               //
