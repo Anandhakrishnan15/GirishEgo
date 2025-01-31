@@ -3,10 +3,23 @@ import "./contact.css";
 import CRS from "../../assets/Images/contact-Us-page/contact-us page-CS-image.webp";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Form from "../../Components/Form/Form";
+import PopupModal from "../../Components/Form/popup/PopupModal";
+import { useCall } from "../../global/CallContext";
 const ContactUs = () => {
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
   const [loading, setLoading] = useState(null); // Track loading state per number
-  
+  const { handleCall } = useCall();
+  const formFields = [
+    { type: "text", name: "name", placeholder: "Your Name" },
+    { type: "email", name: "email", placeholder: "Your Email" },
+    {
+      type: "textarea",
+      name: "message",
+      placeholder: "Your Message",
+      rows: 5,
+    },
+  ];
 
   const contactDetails = [
     {
@@ -14,54 +27,15 @@ const ContactUs = () => {
       content: [
         "M/s. Girish Electrical Industries. 31, Tavawala Building, 147 Lohar Chawl, Mumbai - 400 002. Maharashtra, India.",
       ],
-      email:[]
+      email: [],
     },
     {
       title: "Contact Info",
-      content: ["📞+91 22 22068032", "📞+91 22 22083857"],
+      content: ["+91 22 22068032", "+91 22 22083857"],
+      // content: ["📞+91 22 22068032", "📞+91 22 22083857"],
       email: ["📧 sales@girishego.com", "📧 info@girishego.com"],
     },
   ];
-
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setShowPopup(true);
-  };
-
-  // Handle call with dynamic number
-  const handleCall = (phoneNumber) => {
-    // Check if the user is on a mobile device
-    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-    if (!isMobile) {
-      toast.warning(
-        "You are using a desktop/laptop. Please use a mobile phone to make a call.",
-        {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: false,
-          progress: undefined,
-          theme: "colored",
-          // transition: Slide,
-        }
-      );
-         setShowPopup(false)
-      return; // Stop function execution if on a desktop
-    }
-    if (!phoneNumber) return;
-    setLoading(true); // Show loader for this number
-    window.location.href = `tel:${phoneNumber}`;
-
-    // Simulate call duration (7 seconds), then reset
-    setTimeout(() => {
-      setShowPopup(false);
-      setLoading(false);
-    }, 7000);
-  };
 
   return (
     <div className="contact-page">
@@ -79,7 +53,7 @@ const ContactUs = () => {
               <h3>{detail.title}</h3>
               {detail.content.map((line, i) => (
                 <a
-                  onClick={() => handleCall(detail.content)}
+                  onClick={() => handleCall(detail.content[i])}
                   key={i}
                   className="hover-effect"
                 >
@@ -126,40 +100,14 @@ const ContactUs = () => {
         <div className="form-image">
           <img src={CRS} alt="Customer Service" />
         </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <h2>Send Us a Message</h2>
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message" rows="5"></textarea>
-          <button type="submit">Submit</button>
-        </form>
+        <Form
+          formheading="Send Us A Message"
+          formbutton="Send"
+          formFields={formFields}
+          popupMessage="Sorry for the inconvenience. Kindly call us for a better experience."
+          onSubmit={(data) => data}
+        />
       </div>
-
-      {/* Pop-up Modal */}
-      {showPopup && (
-        <div className="popup-overlay">
-          <div className="popup">
-            <h3>Thank you for reaching out!</h3>
-            <p>
-              Sorry for the inconvenience. Kindly call us for better experience.
-            </p>
-            <div className="popup-buttons">
-              <button
-                className="call-btn"
-                onClick={() => handleCall("+912222068032")}
-              >
-                {loading ? "Calling..." : "Call Us"}
-              </button>
-              <button
-                className="cancel-btn"
-                onClick={() => setShowPopup(false)}
-              >
-                Cancel
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
