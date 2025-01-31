@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import PanelSpaceHeatersCalculator from "./ResourcespagesComponents/calculator/PanelSpaceHeatersCalculato";
+import { Outlet } from "react-router-dom";
 
 const Resources = () => {
   return (
     <div>
-      <h1>Resources page</h1>
+      {/* <h2>Resources</h2> */}
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default Resources
+export default Resources;
