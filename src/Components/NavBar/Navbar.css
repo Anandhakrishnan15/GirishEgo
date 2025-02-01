@@ -184,6 +184,8 @@
  }
  .sidebarLogo{
   display: none;
+  padding: 10px;
+  margin-bottom: 50px;
  }
  .ham-menu span{
   height: 10px;
@@ -217,7 +219,7 @@ transform: rotate(180deg);
     flex-direction: column;
     top: 0px;
     right: 0px;
-    width: 70%;
+    width: 100%;
     background: linear-gradient(135deg, #001f3f, #01448b);
     transition: right 1s ease;
   }
@@ -355,7 +357,7 @@ transform: rotate(180deg);
   padding: 10px;
  }
   .dropdown-menu {
-    top: 40px;
+    top: 70px;
         width: 100%;
         margin: 0;
         padding: 0px;
@@ -381,14 +383,12 @@ transform: rotate(180deg);
   .dropdown-menu .dropdown-item {
     padding: 0px;
     width: 90%;
-
-    
     overflow: visible;
-    background: linear-gradient(135deg, #f4f4f4, #00449c);
+    background: linear-gradient(135deg, #99999900, #97979800);
 
     h3{
       margin: 10px 0px;
-      color: #080808;
+      color: #fcf6f6;
     }
   }
   .dropdown-menu .dropdown-item:last-child{
@@ -396,10 +396,26 @@ transform: rotate(180deg);
   }
   .icons li {
         /* margin: 10px; */
-        padding: 11px;
+        padding: 25px;
+        font-size: 20px;
         border-bottom: 1px solid rgb(37, 37, 37);
         list-style: none;
+        color:rgb(5, 171, 248);
+        .active{
+      color:rgb(234, 255, 0);
+
+        }
+       
   }
+   .active{
+    li{
+      color:rgb(234, 255, 0);
+    }
+          
+        }
+  li span {
+        color:rgb(5, 171, 248);
+}
   .sub-dropdown-menu{
     padding: 0;
     display: none;
@@ -407,13 +423,11 @@ transform: rotate(180deg);
   
   .open-hamListcontainer .sub-dropdown-menu li{
     margin: 0px;
-   background: linear-gradient(235deg, #abb1b5, #ffffff00);
+   background: linear-gradient(235deg, #154260, #ffffff00);
    transition:all 0.5s ease-in;
        a{
  color: rgb(255, 255, 255);
     }
-    
-
   }
   .sub-dropdown-menu li:hover{
 background: linear-gradient(235deg, #000000, #152479);
@@ -424,7 +438,7 @@ background: linear-gradient(135deg, #000000, #152479);
 }
   .open-hamListcontainer li,.navlistcontainer li {
 margin: 0px 15px;
-background: linear-gradient(135deg, #dddddd, #3891fd);
+background: linear-gradient(135deg, #050000, #00070f);
   }
   .navlistcontainer li:hover{
     color: #029eff;
@@ -434,9 +448,10 @@ background: linear-gradient(135deg, #dddddd, #3891fd);
 }
 .resdropdown-menu {
   width: 100%;
+  top: 70px;
 }
 .resdropdown-menu li{
-  background-color: black;
+ 
   border-top: 1px solid gainsboro;
 }
  }
