@@ -94,3 +94,57 @@ button:hover {
     }
   }
 }
+
+
+
+/* Large screens (Desktops & Large Laptops) */
+@media (max-width: 1200px) {
+ /* section{
+  border:1px solid red;
+} */
+}
+
+/* Small Laptops & Large Tablets */
+@media (max-width: 992px) {
+/* section{
+  border:1px solid rgb(255, 196, 0);
+} */
+}
+
+/* Tablets & Small Laptops */
+@media (max-width: 768px) {
+/* section{
+  border:1px solid rgb(140, 255, 0);
+} */
+.sectionWrapper {
+    padding: 20px 30px;
+}
+.about_us {
+  margin: 50px 0;
+}
+}
+
+/* Large Mobile Phones (470px and below) */
+@media (max-width: 470px) {
+/* section{
+  border:1px solid rgb(0, 255, 208);
+} */
+     .sectionWrapper {
+        padding: 10px 10px;
+    }
+}
+
+/* Small Mobile Phones (400px and below) */
+@media (max-width: 400px) {
+/* section{
+  border:1px solid rgb(0, 8, 255);
+} */
+
+}
+
+/* Extra Small Mobile Phones (320px and below) */
+@media (max-width: 320px) {
+/* section{
+  border:1px solid rgb(255, 0, 255);
+} */
+}
