@@ -21,6 +21,14 @@ const PoductsId = () => {
         flexWrap: "wrap",
       }}
     >
+      {/* Product heading and sub headings */}
+      <div className="productHeader">
+        <div className="line"></div>
+        <h1 style={{ fontSize: "50px", textTransform: "uppercase" }}>
+          {productCat.name}
+        </h1>
+        <div className="line"></div>
+      </div>
       {productCat.subProducts.map((sp) => (
         <div
           key={sp.id}
@@ -33,7 +41,12 @@ const PoductsId = () => {
         >
           <Cards
             productImg={sp.productImg}
-            heading={sp.title}
+            heading={sp.title .toLowerCase() // Convert the whole title to lowercase
+      .replace(/=(\w)/g, (_, char) => char.toUpperCase()) // Remove hyphens & capitalize next letter
+      .split(" ") // Split title into words
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter of each word
+      .join(" ") // Join words back into a string
+      }
             subProductsID={sp.id}
             productId={productId}
             pdric={sp.description}
