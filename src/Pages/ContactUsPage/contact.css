@@ -65,7 +65,7 @@
   padding: 20px;
   border-radius: 10px;
   width: 25%;
-  min-width: 250px;
+  /* min-width: 250px; */
   text-align: center;
   box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
   transition: transform 0.3s ease-in-out;
@@ -117,7 +117,7 @@
 }
 
 .form-image{
-    width: 30%;
+    width: 50%;
 img {
   width: 100%;
   height: auto;
@@ -180,7 +180,8 @@ img {
 }
 
 .contact-form {
-  width: 50%;
+  width: 70%;
+  margin: auto;
   padding: 30px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 10px;
@@ -272,7 +273,7 @@ img {
     align-items: center;
   }
   .form-image {
-    width: 90%;
+    width: 50vh;
 }
 
   .office-box {
@@ -291,6 +292,12 @@ img {
   }
 
   .contact-form {
-    width: 100%;
+    width: auto;
+  }
+}
+/* width max 320px */
+@media (max-width:375px) {
+  .office-box{
+    width: 80%;
   }
 }

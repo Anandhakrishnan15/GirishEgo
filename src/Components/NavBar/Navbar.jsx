@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css';
 import {Link, NavLink, useLocation} from 'react-router';
-import Products from '../Pages/ProductPage/Products';
-import Res_Support from "../Pages/ResourcesPage/Res_Support"
-import Logo from "../../assets/Images/Logo-main.jpg";
+import Products from '../../Data/Products';
+// import Res_Support from "./Pages/ResourcesPage/Res_Support"
+import Res_Support from "../../Data/Res_Support";
 
+import Logo from "../../assets/Images/Logo-main.jpg";
+import Logo2 from "../../assets/Images/GEC Logo png.png";
 const Navbar = () => {
   // const [scrollData, setscrollData] = useState({ y: 0, lastY: 1 });
   // get the postion of the Scroll bar y axis
@@ -117,7 +119,7 @@ const Navbar = () => {
       <div className="icons">
         <ul className={hamenuon ? "open-hamListcontainer" : "navlistcontainer"}>
           <div className="sidebarLogo">
-            <h3>Logo</h3>
+            <img src={Logo2} alt="" style={{width:'50%'}} />
           </div>
           {hamenuon ? (
             <div>
@@ -144,7 +146,7 @@ const Navbar = () => {
           <li
             className="dropdown"
             onMouseEnter={() => setDropdown(true)}
-            onMouseLeave={() => setDropdown(1)}
+            onMouseLeave={() => setDropdown(false)}
           >
             <span
               //
@@ -177,8 +179,6 @@ const Navbar = () => {
                         onClick={() => toggleSubProductVisibility(product.id)}
                         style={{
                           cursor: "pointer",
-                          borderBottom: "1px solid gray",
-                          borderTop: "1px soild gray",
                           padding: "10px",
                         }}
                       >
@@ -243,13 +243,13 @@ const Navbar = () => {
                     key={reso.id}
                     className="resdropdown-item"
                   >
-                    <NavLink
-                      to={`/Resources`}
+                    <Link
+                      to={`/Resources/${reso.id}`}
                       onClick={handleLinkClick}
                       style={{ cursor: "pointer" }}
                     >
                       <h3>{reso.name}</h3>
-                    </NavLink>
+                    </Link>
                   </li>
                 ))}
               </ul>

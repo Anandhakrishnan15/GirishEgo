@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./carousel.css"; // Import the CSS file
-import AnimatedElements from "../Animations/AnimatedElements";
+// import AnimatedElements from "../Animations/AnimatedElements";
+import sliderImages1 from "../../assets/Images/slider banner/sliderImg (1).jpeg";
+import sliderImages2 from "../../assets/Images/slider banner/sliderImg (2).jpeg";
+import sliderImages3 from "../../assets/Images/slider banner/sliderImg (3).jpeg";
+import sliderImages4 from "../../assets/Images/slider banner/sliderImg (4).jpeg";
 
 const Carousel = () => {
-  const images = [
-  "adfadasdas",
-  'asdasdasdas',
-  'asdasdas',
-  'asdasdasd',
-  ];
+  const images = [sliderImages1, sliderImages2, sliderImages3, sliderImages4,];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -40,12 +39,12 @@ const Carousel = () => {
         />
       </div>
       {/* Buttons */}
-      <button onClick={handlePrev} className="carousel-button prev-button">
+      {/* <button onClick={handlePrev} className="carousel-button prev-button">
         Previous
       </button>
       <button onClick={handleNext} className="carousel-button next-button">
         Next
-      </button>
+      </button> */}
 
       {/* <AnimatedElements /> */}
      

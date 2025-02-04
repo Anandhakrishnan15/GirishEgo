@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "./product.css";
-import Products from "./Products";
+import Products from "../../Data/Products";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaRegHandPointRight } from "react-icons/fa6";
 
@@ -47,7 +47,9 @@ const ProductDetails = () => {
             {/* Product heading and sub headings */}
             <div className="productHeader">
               <div className="line"></div>
-              <h1>{info.title}</h1>
+              <h1>
+              {info.title.replace(/=/g, "").toUpperCase()} 
+              </h1>
               <div className="line"></div>
               <h3>{info.application}</h3>
               <h4>({info.models.join(", ")})</h4>
