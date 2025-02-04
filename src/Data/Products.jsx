@@ -365,7 +365,7 @@ const Products = [
       // PTC heatres data
       {
         id: "PTC-Enclosure-Heaters",
-        title: "PTC Enclosure Heaters",
+        title: "P=T=C Enclosure Heaters",
         productImg: PTC1,
         application: "For Panel Boards & Switchgear Industries",
         models: ["HGG 140 15W-150W"],
