@@ -17,40 +17,6 @@ const Form = ({
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle call with dynamic number
-  //   const handleCall =(phoneNumber) => {
-  //     // Check if the user is on a mobile device
-  //     const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-  //     if (!isMobile) {
-
-  //       toast.warning(
-  //         "You are using a desktop/laptop. Please use a mobile phone to make a call.",
-  //         {
-  //           position: "top-center",
-  //           autoClose: 5000,
-  //           hideProgressBar: true,
-  //           closeOnClick: true,
-  //           pauseOnHover: true,
-  //           draggable: false,
-  //           progress: undefined,
-  //           theme: "colored",
-  //           // transition: Slide,
-  //         }
-  //       );
-  //          setShowPopup(false)
-  //       return; // Stop function execution if on a desktop
-  //     }
-  //     if (!phoneNumber) return;
-
-  //      // Show loader for this number
-  //     window.location.href = `tel:${phoneNumber}`;
-
-  //     // Simulate call duration (7 seconds), then reset
-  //     setTimeout(() => {
-  //       setShowPopup(false)
-  //     }, 7000);
-  //   };
   const { handleCall, setShowPopup, showPopup } = useCall();
 
   const handleSubmit = (e) => {

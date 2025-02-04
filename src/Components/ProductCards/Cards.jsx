@@ -32,7 +32,9 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric, }) => {
 
       {/* Product Heading */}
       <div className="card-heading-container">
-        <h3 className="card-heading">{heading.toLowerCase()}</h3>
+        <h3 className="card-heading">{
+          heading
+        }</h3>
       </div>
       {/* card discriptions */}
       <div className="cardDiscContainer">

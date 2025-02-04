@@ -2,6 +2,7 @@
   width: 300px;
   height: auto;
   border: 1px solid #ddd;
+  /* align-items: center; */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -42,11 +43,11 @@
 .card-heading {
   font-size: 1.5rem;
   color: var(--title-color);
-  width: 80%;
+  /* width: 80%; */
   text-transform: capitalize;
   /* margin: auto;; */
   /* margin-bottom: 15px; */
-  /* text-align: center; */
+  text-align: center;
 }
 
 .card-dropdown {
@@ -71,7 +72,7 @@
 
 .cursor-icon {
   position: absolute;
-  right: 0;
+  right:0 ;
   top: -35px;
   color: rgb(0 159 226);
   stroke-width: 1px;

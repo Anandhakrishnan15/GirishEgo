@@ -39,12 +39,12 @@ const Carousel = () => {
         />
       </div>
       {/* Buttons */}
-      <button onClick={handlePrev} className="carousel-button prev-button">
+      {/* <button onClick={handlePrev} className="carousel-button prev-button">
         Previous
       </button>
       <button onClick={handleNext} className="carousel-button next-button">
         Next
-      </button>
+      </button> */}
 
       {/* <AnimatedElements /> */}
      
