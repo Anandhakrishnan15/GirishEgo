@@ -101,7 +101,7 @@ const ContactUs = () => {
           <img src={CRS} alt="Customer Service" />
         </div>
         <Form
-          formheading="Send Us A Message"
+          formheading="Send us your Query "
           formbutton="Send"
           formFields={formFields}
           popupMessage="Sorry for the inconvenience. Kindly call us for a better experience."
