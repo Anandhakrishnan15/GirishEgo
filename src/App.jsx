@@ -14,7 +14,8 @@ import Footer from "./Components/footer/Footer";
 import { ToastContainer } from "react-toastify";
 import { CallProvider } from "./global/CallContext";
 import PanelSpaceHeatersCalculator from "./Pages/ResourcesPage/ResourcespagesComponents/calculator/PanelSpaceHeatersCalculato";
-import Application from "./Pages/ResourcesPage/ResourcespagesComponents/Application/Application";
+// import CatDownload from "./Pages/ResourcesPage/ResourcespagesComponents/download-catalog/downloadCatalog";
+import PDFPreview from "./Pages/ResourcesPage/ResourcespagesComponents/download-catalog/downloadCatalog";
 // import contactDetails from "./Components/Pages/ContactUsPage/contactDetails";
 
 function App() {
@@ -34,7 +35,10 @@ function App() {
             path="heat-calculator"
             element={<PanelSpaceHeatersCalculator />}
           />
-          <Route path="application" element={<Application />} />
+          <Route
+            path="catalogue-download"
+            element={<PDFPreview pdfFile="/GEC-CAT-21-01-23.pdf" />}
+          />
         </Route>
         {/* <Route path="/Products" element={<Products />} /> */}
         {/* Product-specific routes */}
