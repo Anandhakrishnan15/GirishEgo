@@ -25,7 +25,7 @@
 
 }
 
-.about_us h2 {
+.about_us h2,h1 {
   font-size: 2rem;
   /* color: #333;*/
   margin-bottom: 30px;
@@ -69,7 +69,7 @@ button:hover {
 .sectionWrapper {
   /* border:1px solid red; */
   padding: 20px 60px;
-  color: rgb(236, 219, 219); /* Adjust text color for better contrast */
+  color: rgb(255, 255, 255); /* Adjust text color for better contrast */
 }
 
 /* Odd sections: Dark blue background */
@@ -89,7 +89,7 @@ button:hover {
   color: #000; /* Adjust text color for better readability */
   .about_us{
     background-color: var(--lightblue);
-    h2{
+    h2,h1{
       border-bottom: 1px solid rgb(0, 0, 0);
     }
   }

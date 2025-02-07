@@ -7,7 +7,8 @@ import Cards from '../../Components/ProductCards/Cards';
  import cardImg2 from "/hompage-cardimgs/1.png";
  import cardImg3 from "/hompage-cardimgs/3.png";
 import Marquee from '../../Marquee/Marquee';
-
+import Certifiat from '../../Components/certificats/certifiat';
+// import AboutStatus from '../../Components/AboutStatus/AboutStatus';
 
 const Home = () => {
   const cardsimgs = [cardImg1, cardImg2, cardImg3];
@@ -15,8 +16,7 @@ const Home = () => {
     <div>
       {/* <h1>homepage</h1> */}
       <Carousel />
-      <Marquee/>
- 
+      <Marquee />
       <div
         className="ProductCArdContainer"
         style={{
@@ -27,7 +27,7 @@ const Home = () => {
           zIndex: "3",
         }}
       >
-        {Products.map((Product,index) => (
+        {Products.map((Product, index) => (
           <div
             key={Product.id}
             style={{
@@ -48,8 +48,10 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <Certifiat />
+      {/* <AboutStatus/> */}
     </div>
   );
-}
 
+}
 export default Home

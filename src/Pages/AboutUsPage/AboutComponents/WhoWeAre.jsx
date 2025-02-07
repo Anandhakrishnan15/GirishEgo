@@ -4,7 +4,7 @@ import React from "react";
 const WhoWeAre = ({ data }) => {
   return (
     <section className="about_us">
-      <h2>{data.title}</h2>
+      <h1>{data.title}</h1>
       {data.content.map((paragraph, index) => (
         <React.Fragment key={index}>
           <p dangerouslySetInnerHTML={{ __html: paragraph }}></p>

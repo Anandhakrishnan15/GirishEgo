@@ -5,13 +5,13 @@ const CatalogPage = () => {
   const pdfs = [
     {
       title: "Catalog 1",
-      pdfUrl: "/GEC-CAT-21-01-23.pdf",
-      imageUrl: "/GEC-CAT-21-01-23-pages-images-0.jpg",
+      pdfUrl: "/catalogs/GEC-CAT-21-01-23.pdf",
+      imageUrl: "/catalogs/GEC-CAT-21-01-23-pages-images-0.jpg",
     },
     {
       title: "Catalog 2",
-      pdfUrl: "/GEC-CAT-21-01-23.pdf",
-      imageUrl: "/GEC-CAT-21-01-23-pages-images-0.jpg",
+      pdfUrl: "/GEC New Catalog 04 02 2025AA.pdf",
+      imageUrl: "/catalogs/GEC New Catalog 04 02 2025AA-pages-1.jpg",
     },
   ];
  
