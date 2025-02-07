@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./carousel.css"; // Import the CSS file
 // import AnimatedElements from "../Animations/AnimatedElements";
-import sliderImages1 from "../../assets/Images/slider banner/sliderImg (1).jpeg";
-import sliderImages2 from "../../assets/Images/slider banner/sliderImg (2).jpeg";
-import sliderImages3 from "../../assets/Images/slider banner/sliderImg (3).jpeg";
-import sliderImages4 from "../../assets/Images/slider banner/sliderImg (4).jpeg";
+// import sliderImages1 from "../../assets/Images/slider banner/imgs (1).webp";
+// import sliderImages2 from "../../assets/Images/slider banner/imgs (1).jpg";
+// import sliderImages3 from "../../assets/Images/slider banner/imgs (2).jpg";
+import sliderImages4 from "../../assets/Images/slider banner/imgs (4).png";
 
 const Carousel = () => {
-  const images = [sliderImages1, sliderImages2, sliderImages3, sliderImages4,];
+  const images = [
+    "https://www.alliedmarketresearch.com/InsightsImages/banner-1-C-2024-07-09-1720532573.webp",
+    "https://t3.ftcdn.net/jpg/09/35/11/38/360_F_935113876_ZuJdvJbR8Vgn1lgNgvYk5kMCstzl4IZD.jpg",
+    "https://vijaytransformers.com/images/main-slider/1.jpg",
+    sliderImages4,
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -19,15 +24,15 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  // const handleNext = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  // };
 
-  const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
+  // const handlePrev = () => {
+  //   setCurrentIndex(
+  //     (prevIndex) => (prevIndex - 1 + images.length) % images.length
+  //   );
+  // };
 
   return (
     <div className="carousel">
@@ -47,7 +52,6 @@ const Carousel = () => {
       </button> */}
 
       {/* <AnimatedElements /> */}
-     
     </div>
   );
 };
