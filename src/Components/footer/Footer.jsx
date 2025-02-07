@@ -43,7 +43,13 @@ const Footer = () => {
     <footer className="footer">
       {/* Logo */}
       <div className="footer-logo">
-        <img src={Logo} alt="Logo" className="logo" />
+        <img
+          src={Logo}
+          alt="Girish Ego Controls Logo"
+          title="Girish Ego logo"
+          loading="lazy"
+          className="logo"
+        />
       </div>
 
       {/* Tagline */}

@@ -104,7 +104,12 @@ const Navbar = () => {
     >
       {/* here if the navBarViaibe is true then it will activate the show class from the css file else " " */}
       <div className="logo">
-        <img  src={Logo} alt="GirishEco_logo" />
+        <img
+          src={Logo}
+          alt="Girish Ego Controls Logo"
+          title="Girish Ego Controls"
+          loading="lazy"
+        />
       </div>
       <div
         className="ham-menu"
@@ -119,7 +124,13 @@ const Navbar = () => {
       <div className="icons">
         <ul className={hamenuon ? "open-hamListcontainer" : "navlistcontainer"}>
           <div className="sidebarLogo">
-            <img src={Logo2} alt="" style={{width:'50%'}} />
+            <img
+              src={Logo2}
+              alt="Girish Ego Controls Alternate Logo"
+              title="Girish Ego Controls"
+              loading="lazy"
+              style={{ width: "3443", height: "776" }}
+            />
           </div>
           {hamenuon ? (
             <div>
@@ -220,7 +231,7 @@ const Navbar = () => {
               }`}
               onClick={() => setResDropdown(!resdropdown)}
             >
-              Resources/Support
+              Resources/Downloads
               <span
                 className={`resorceDropDownArrow ${
                   resdropdown ? "resarrowrotate" : ""
