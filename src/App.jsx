@@ -16,6 +16,7 @@ import { CallProvider } from "./global/CallContext";
 import PanelSpaceHeatersCalculator from "./Pages/ResourcesPage/ResourcespagesComponents/calculator/PanelSpaceHeatersCalculato";
 // import CatDownload from "./Pages/ResourcesPage/ResourcespagesComponents/download-catalog/downloadCatalog";
 import PDFPreview from "./Pages/ResourcesPage/ResourcespagesComponents/download-catalog/downloadCatalog";
+import WhatsAppButton from "./Components/whatsappButton/WhatsAppButton";
 // import contactDetails from "./Components/Pages/ContactUsPage/contactDetails";
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
           element={<ProductDetails />}
         />
       </Routes>
-
+      <WhatsAppButton/>
       <Footer />
     </>
   );
