@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Cards from '../../Components/ProductCards/Cards'
 import Products from "../../Data/Products";
 import { useParams } from 'react-router-dom';
+import SEO from '../../Components/SEO/SEO';
 
 const PoductsId = () => {
   const {productId}=useParams();
@@ -22,6 +23,14 @@ const PoductsId = () => {
         flexWrap: "wrap",
       }}
     >
+      <SEO
+        title="About Us - Girish Ego Controls"
+        description="Learn more about Girish Ego Controls, our infrastructure, team, quality commitment, mission, and vision."
+        keywords="Girish Ego Controls, about us, infrastructure, team, mission, vision, quality assurance"
+        image="https://www.girishego.com/images/about-us.jpg"
+        siteName="Girish Ego Controls"
+        twitterHandle="@GirishEgo"
+      />
       {/* Product heading and sub headings */}
       <div className="productHeader">
         <div className="line"></div>

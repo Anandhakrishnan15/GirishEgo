@@ -6,6 +6,8 @@ import "./product.css";
 import Products from "../../Data/Products";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { FaRegHandPointRight } from "react-icons/fa6";
+import SEO from "../../Components/SEO/SEO";
+import seoData from "../../Components/SEO/SeoData";
 
 const ProductDetails = () => {
   const { productId, subProductId } = useParams();
@@ -25,23 +27,40 @@ const ProductDetails = () => {
     : product.subProducts;
 
   useEffect(() => {
-  if (subProductId) {
-    window.scrollTo({
-      top: 0, // Scroll to the top
-      behavior: "smooth", // Smooth scrolling animation
-    });
-  }
-}, [subProductId]);;
+    if (subProductId) {
+      window.scrollTo({
+        top: 0, // Scroll to the top
+        behavior: "smooth", // Smooth scrolling animation
+      });
+    }
+  }, [subProductId]);
+
+const seoInfo =
+  seoData.find((seo) => seo.id === subProductId)?.seoInfo?.[0] ?? "Not Found";
+
 
   return (
     <div className="productContainer">
+      <SEO
+        title={seoInfo.title}
+        description={seoInfo.description}
+        keywords={seoInfo.keywords}
+        siteName={seoInfo.siteName}
+        image={filteredSubProducts.productImg}
+        url={seoInfo.url}
+        product={seoInfo.product}
+        breadcrumb={seoInfo.breadcrumb}
+        faqs={seoInfo.faqs}
+      />
       <motion.div
         className="productHeader"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 style={{ textTransform: "capitalize" }}>{product.name}</h1>
+        <h2 style={{ textTransform: "capitalize", color: "rgb(14, 51, 108)", fontSize:'30px' }}>
+          {product.name}
+        </h2>
       </motion.div>
       {filteredSubProducts.map((info) => (
         <div className="productsHolder" key={info.id}>
@@ -62,8 +81,8 @@ const ProductDetails = () => {
               <div className="line"></div>
               <h1>{info.title.replace(/=/g, "").toUpperCase()}</h1>
               <div className="line"></div>
-              <h3>{info.application}</h3>
-              <h4>({info.models.join(", ")})</h4>
+              <h2>{info.application}</h2>
+              <h3>({info.models.join(", ")})</h3>
             </motion.div>
             {/* Image and features */}
             <div className="imgAndFeaturesHolder">
@@ -427,13 +446,14 @@ const ProductDetails = () => {
                   margin: "20px",
                   color: "rgb(14, 51, 108)",
                   display: "flex",
+                  fontSize: "25px",
                   justifyContent: "space-around",
                 }}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
               >
-                <h1>More info</h1>
+                <h2>More info</h2>
               </motion.div>
               {/* other Images container */}
               <motion.div

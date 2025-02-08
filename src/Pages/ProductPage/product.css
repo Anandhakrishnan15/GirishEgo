@@ -49,6 +49,7 @@
   width: 100%;
 
   h1,
+  h2
   h3,
   h4 {
     text-align: center;
@@ -63,7 +64,7 @@
     color: var(--title-color)
   }
 
-  h4 {
+  h3 {
     color: var(--subTital-color);
   }
 

@@ -565,7 +565,7 @@ const Products = [
         recommendation: "",
         otherImages: [CHPFH2, CHPFH4, CHPFH3, CHPFH5, CHPFH6],
       },
-      // small semi =conductor heater
+      // small semi conductor heater
       {
         id: "SMALL-SEMICONDUCTOR-HEATER",
         title: "SMALL SEMICONDUCTOR HEATER",
@@ -1109,7 +1109,7 @@ const Products = [
     id: "Accessories",
     name: "Accessories",
     subProducts: [
-      // Hazardous Area Thermostat
+      // PRESSURE-COMPENSATION-DEVICE
       {
         id: "PRESSURE-COMPENSATION-DEVICE",
         title: "PRESSURE COMPENSATION DEVICE",
@@ -1203,10 +1203,7 @@ const Products = [
           "T5 Fluorescent Cabinet Lamp offering high brightness, long service life, energy saving, and reliable operation at low voltage.",
         workingH: "",
         workingDetails: [
-          // "T5 Fluorescent Cabinet Lamp",
-          // "High brightness, small size with on/off switch ",
-          // "Long service life non flicker & can start by low voltage",
-          // "Energy Saving with Opal Cover, Or with Striate Cover",
+         
         ],
         construtionH: "",
         constrution: [],
