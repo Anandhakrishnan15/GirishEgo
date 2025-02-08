@@ -27,7 +27,7 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric, }) => {
     <div className="card" onClick={handleSelect}>
       {/* Logo */}
       <div className="card-logo-container">
-        <img src={logo} alt="Logo" className="card-logo" />
+        <img src={logo} alt="Logo" title="GirishEgo logo" loading="lazy" className="card-logo" />
       </div>
 
       {/* Product Heading */}
@@ -42,7 +42,7 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric, }) => {
       </div>
       {/* Product Image */}
       <div className="card-product-img-container">
-        <img src={productImg} alt={heading} className="card-product-img" />
+        <img src={productImg} alt={heading} title={`${heading} products`} width={'auto'} loading="lazy" className="card-product-img" />
         <div className="readmorarrow">
           {/* Normal arrow */}
           <TbArrowBigRight className={`cursor-icon `} />
@@ -53,20 +53,3 @@ const Cards = ({ productImg, heading, subProductsID, productId, pdric, }) => {
 };
 
 export default Cards;
-
- 
-  //  /* Show select dropdown if 'select' array exists */
- 
-// {
-//   select && select.length > 0 && (
-//     <div className="select-container">
-//       <select className="product-select">
-//         {select.map((option, idx) => (
-//           <option key={idx} value={option}>
-//             {option}
-//           </option>
-//         ))}
-//       </select>
-//     </div>
-//   );
-// }

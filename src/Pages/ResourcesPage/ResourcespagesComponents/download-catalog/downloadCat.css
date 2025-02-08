@@ -67,4 +67,7 @@
   .pdf-item {
     max-width: 90%;
   }
+  .catalog-page {
+    flex-direction: column;
+  }
 }

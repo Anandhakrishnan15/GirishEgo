@@ -1,13 +1,14 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import Cards from '../../Components/ProductCards/Cards'
 import Products from "../../Data/Products";
 import { useParams } from 'react-router-dom';
 
 const PoductsId = () => {
   const {productId}=useParams();
-  console.log('product id', productId);
+  // console.log('product id', productId);
   const productCat= Products.find((prod)=> prod.id === productId)
-  console.log('prodfuct cat',productCat.subProducts);
+  // console.log('prodfuct cat',productCat.subProducts);
   if(!productCat){
     return(
       <h1>no product found</h1>
@@ -30,7 +31,7 @@ const PoductsId = () => {
         <div className="line"></div>
       </div>
       {productCat.subProducts.map((sp) => (
-        <div
+        <motion.div
           key={sp.id}
           style={{
             // display: "flex",
@@ -38,15 +39,22 @@ const PoductsId = () => {
             padding: "20px",
             zIndex: "3",
           }}
+          initial={{ opacity: 0, y: 50 }} // Start lower & invisible
+          whileInView={{ opacity: 1, y: 0 }} // Fade in & move up when in view
+          exit={{ opacity: 0, y: 50 }} // Fade out & move down when out of view
+          transition={{ duration: 1, ease: "easeOut" }} // Delay each item
+          viewport={{ once: false }} // Allows animation when scrolling up/down
         >
           <Cards
             productImg={sp.productImg}
-            heading={sp.title .toLowerCase() // Convert the whole title to lowercase
-      .replace(/=(\w)/g, (_, char) => char.toUpperCase()) // Remove hyphens & capitalize next letter
-      .split(" ") // Split title into words
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter of each word
-      .join(" ") // Join words back into a string
-      }
+            heading={
+              sp.title
+                .toLowerCase() // Convert the whole title to lowercase
+                .replace(/=(\w)/g, (_, char) => char.toUpperCase()) // Remove hyphens & capitalize next letter
+                .split(" ") // Split title into words
+                .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter of each word
+                .join(" ") // Join words back into a string
+            }
             subProductsID={sp.id}
             productId={productId}
             pdric={sp.description}
@@ -55,7 +63,7 @@ const PoductsId = () => {
             // // )}
             // options={Product.subProducts}
           />
-        </div>
+        </motion.div>
       ))}
     </div>
   );

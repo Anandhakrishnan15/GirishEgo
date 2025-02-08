@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./calculator.css";
 import Form from "../../../../Components/Form/Form";
 
@@ -49,20 +50,43 @@ const PanelSpaceHeatersCalculator = () => {
   ];
 
   return (
-    <div>
-      <div className="calculator-container">
-        <h1 className="heading">Panel Space Heater Calculator</h1>
-        <div className="form-container">
-          <Form
-            formheading="Fill the Form"
-            formbutton="Calculate"
-            formFields={formFields}
-            popupMessage="Sorry for the inconvenience. Kindly call us for a better experience."
-            onSubmit={(data) => data}
-          />
-        </div>
-      </div>
-    </div>
+    
+<div>
+  <motion.div
+    className="calculator-container"
+    initial={{ opacity: 0 }} // Start invisible and lower
+    whileInView={{ opacity: 1,}} // Fade in and move up
+    transition={{ duration: 1, ease: "easeOut" }}
+    viewport={{ once: true }}
+  >
+    <motion.h1
+      className="heading"
+      initial={{ opacity: 0, y: -20 }} // Heading starts slightly above
+      whileInView={{ opacity: 1, y: 0 }} // Moves into place
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      Panel Space Heater Calculator
+    </motion.h1>
+
+    <motion.div
+      className="form-container"
+      initial={{ opacity: 0, x: -50 }} // Form starts from the left
+      whileInView={{ opacity: 1, x: 0 }} // Slides into view
+      transition={{ duration: 1, delay: 0.5, ease: "easeOut" }} // Slight delay for a staggered effect
+      viewport={{ once: true }}
+    >
+      <Form
+        formheading="Fill the Form"
+        formbutton="Calculate"
+        formFields={formFields}
+        popupMessage="Sorry for the inconvenience. Kindly call us for a better experience."
+        onSubmit={(data) => data}
+      />
+    </motion.div>
+  </motion.div>
+</div>
+
   );
 };
 

@@ -44,6 +44,7 @@
 
 }
 
+
 .productHeader {
   width: 100%;
 
@@ -206,6 +207,7 @@
   flex: 1; /* Make width dynamic */
   height: fit-content;
   min-width: 40%; /* Minimum width */
+  aspect-ratio: 0/0;
   }
 
   display: flex;

@@ -471,8 +471,8 @@ const Products = [
       },
       //fan heaters data
       {
-        id: "Space-Saveing-Fan-Heaters",
-        title: "SPACE-SAVEING FAN HEATERS ",
+        id: "Space-Saving-Fan-Heaters",
+        title: "SPACE-SAVING FAN HEATERS ",
         productImg: FanH1,
         application: "with COVER FOR CONTINUOUS USE ",
         models: ["HV 031/HVL 031 100W-400W "],

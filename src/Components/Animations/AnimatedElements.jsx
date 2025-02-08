@@ -123,7 +123,7 @@ const AnimatedElements = () => {
               key={el.id}
               src={el.src}
               alt="Floating element"
-              loading="lazy"
+             
           title= "Floating Design Element"
               className={`animated-img ${el.animation}`}
               style={style}

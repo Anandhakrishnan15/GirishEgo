@@ -223,11 +223,7 @@
   }
 }
 @media (max-width: 690px) {
-  .calculator-container {
-    .contact-form {
-      /* background-color: #fa7000; */
-    }
-  }
+ 
   .calculator-container .form-group:nth-child(n + 4) {
     input {
       width: 40%;
