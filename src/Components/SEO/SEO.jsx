@@ -7,6 +7,7 @@ import defaultLogo from "../../assets/images/GEC Logo png.png"; // Fallback logo
 const SEO = ({
   title,
   description,
+  keywords,
   image,
   siteName,
   twitterHandle,
@@ -20,17 +21,15 @@ const SEO = ({
     postalCode: "Your ZIP",
     country: "Your Country",
   },
-  faqs = [],
-  product = null,
-  breadcrumb = [],
-  url, // Now explicitly passed for validation
+  faqs = [], // Added FAQs
+  product = null, // Added Product schema
+  breadcrumb = [], // Added Breadcrumb schema
+  url, // Explicitly passed for validation
 }) => {
   const location = useLocation();
-  const validatedUrl = url
-    ? url
-    : `http://localhost:5173${location.pathname}`;
-  const validatedImage = image || defaultImage; // Fallback to default image
-  const validatedLogo = defaultLogo; // Always use default logo
+  const validatedUrl = url ? url : `http://localhost:5173${location.pathname}`;
+  const validatedImage = image || defaultImage;
+  const validatedLogo = defaultLogo;
 
   // ✅ Organization Schema
   const organizationSchema = {
@@ -55,25 +54,73 @@ const SEO = ({
     },
   };
 
+  // ✅ FAQ Schema
+  const faqSchema =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
+
+  // ✅ Product Schema
+  const productSchema = product
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: product.name,
+        image: product.image || validatedImage,
+        description: product.description || description,
+        brand: {
+          "@type": "Brand",
+          name: product.brand || organization,
+        },
+        offers: {
+          "@type": "Offer",
+          price: product.price,
+          priceCurrency: product.currency || "USD",
+          availability: product.availability || "InStock",
+          url: validatedUrl,
+        },
+      }
+    : null;
+
+  // ✅ Breadcrumb Schema
+  const breadcrumbSchema =
+    breadcrumb.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumb.map((item, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: item.name,
+            item: item.url,
+          })),
+        }
+      : null;
+
   return (
     <Helmet>
-      {/* ✅ Move meta charset to the top */}
+      {/* ✅ Standard SEO Meta Tags */}
       <meta charSet="UTF-8" />
-
-      {/* ✅ Move JSON-LD structured data script before any other scripts */}
-      <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
-      </script>
-
-      {/* Standard SEO Meta Tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
       <meta name="author" content={siteName} />
 
-      {/* Open Graph Meta Tags */}
+      {/* ✅ Open Graph Meta Tags */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content="product" />
       <meta property="og:url" content={validatedUrl} />
       <meta property="og:image" content={validatedImage} />
       <meta property="og:site_name" content={siteName} />
@@ -81,15 +128,33 @@ const SEO = ({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
-      {/* Twitter Meta Tags */}
+      {/* ✅ Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={validatedImage} />
       {twitterHandle && <meta name="twitter:site" content={twitterHandle} />}
 
-      {/* Canonical Link */}
+      {/* ✅ Canonical Link */}
       <link rel="canonical" href={validatedUrl} />
+
+      {/* ✅ JSON-LD Structured Data Scripts */}
+      <script type="application/ld+json">
+        {JSON.stringify(organizationSchema)}
+      </script>
+      {faqSchema && (
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+      )}
+      {productSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(productSchema)}
+        </script>
+      )}
+      {breadcrumbSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      )}
     </Helmet>
   );
 };
