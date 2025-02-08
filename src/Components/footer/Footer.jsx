@@ -34,7 +34,7 @@ const Footer = () => {
       link: "mailto:sales@girishego.com",
     },
     {
-      id: 3,
+      id: 4,
       label: "Email",
       value: "info@girishego.com",
       link: "mailto: info@girishego.com",
