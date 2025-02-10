@@ -56,11 +56,9 @@ import FanH5 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (5).p
 import FanH6 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (6).png";
 import FanH7 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (7).png";
 // stem heatrs imaga import
-import stem1 from "../assets/Images/ptoductsImg/semithermoimages/SH (2).png";
-import stem2 from "../assets/Images/ptoductsImg/semithermoimages/SH (1).png";
-import stem3 from "../assets/Images/ptoductsImg/semithermoimages/SH (3).png";
-import stem4 from "../assets/Images/ptoductsImg/semithermoimages/SH (4).png";
-import stem5 from "../assets/Images/ptoductsImg/semithermoimages/SH (5).png";
+import stem1 from "../assets/Images/ptoductsImg/semithermoimages/SH (7).jpeg";
+import stem4 from "../assets/Images/ptoductsImg/semithermoimages/SH (1).png";
+import stem5 from "../assets/Images/ptoductsImg/semithermoimages/SH (2).png";
 
 
 // round termal heaters
@@ -680,7 +678,7 @@ const Products = [
       {
         id: "Stem-Thermostat",
         title: "STEM THERMOSTAT",
-        productImg: stem4,
+        productImg: stem1,
         application: "For Panel Boards & Switchgear Industries",
         models: ["200 series", "300 series", "400series", "GEC", "GEO", "TCO"],
         featuresH: "Also Available",
@@ -712,7 +710,7 @@ const Products = [
         ],
         remark: "",
         recommendation: "",
-        otherImages: [stem3, stem1, stem5, stem2],
+        otherImages: [stem4, stem5],
       },
       //ENCLOSURE-THERMOSTAT
       {
@@ -1202,9 +1200,7 @@ const Products = [
         description:
           "T5 Fluorescent Cabinet Lamp offering high brightness, long service life, energy saving, and reliable operation at low voltage.",
         workingH: "",
-        workingDetails: [
-         
-        ],
+        workingDetails: [],
         construtionH: "",
         constrution: [],
         tests: [],
