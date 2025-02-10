@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./carousel.css"; // Import the CSS file
-import sliderImages4 from "../../assets/Images/slider banner/imgs (4).png";
+// import sliderImages4 from "../../assets/Images/slider banner/imgs (4).png";
 
 const Carousel = () => {
   const images = [
     "https://t3.ftcdn.net/jpg/09/35/11/38/360_F_935113876_ZuJdvJbR8Vgn1lgNgvYk5kMCstzl4IZD.jpg",
     "https://vijaytransformers.com/images/main-slider/1.jpg",
-    sliderImages4,
+    "https://www.electricalpanelmanufacturers.com/images/banner-two.jpg",
+    // sliderImages4,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
