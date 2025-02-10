@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./downloadCat.css";
+import SEO from "../../../../Components/SEO/SEO";
 const CatalogPage = () => {
   // Array with the image and pdf urls
   const pdfs = [
@@ -18,6 +19,22 @@ const CatalogPage = () => {
  
   return (
     <div className="catalog-page">
+      <SEO
+        title="Download Catalogue - Girish Ego Controls Product Brochure"
+        description="Download the Girish Ego Controls product catalogue to explore our range of enclosure heaters, panel heaters, industrial thermostats, and heating solutions."
+        keywords="Download Product Catalogue, Industrial Heating Solutions Brochure, Enclosure Heater Catalogue, Panel Heater Brochure, Thermostat Product Guide, Electrical Panel Heating PDF, Industrial Heaters Specification"
+        siteName="Girish Ego Controls"
+        url="http://localhost:5173/Resources/catalogue-download"
+        breadcrumb={[
+          { name: "Home", url: "http://localhost:5173/" },
+          { name: "Resources", url: "http://localhost:5173/Resources" },
+          {
+            name: "Catalogue Download",
+            url: "http://localhost:5173/Resources/catalogue-download",
+          },
+        ]}
+      />
+
       {pdfs.map((pdf, index) => (
         <motion.div
           key={index}

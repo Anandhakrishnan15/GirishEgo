@@ -1,7 +1,7 @@
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {motion} from "framer-motion"
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import "./product.css";
 import Products from "../../Data/Products";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -12,6 +12,8 @@ import seoData from "../../Components/SEO/SeoData";
 const ProductDetails = () => {
   const { productId, subProductId } = useParams();
   const productRefs = useRef({}); // Ref object to store references for each product
+ const location = useLocation();
+ const [breadcrumb, setBreadcrumb] = useState([]);
 
   // Find the product based on productId
   const product = Products.find((prod) => prod.id === productId);
@@ -34,10 +36,20 @@ const ProductDetails = () => {
       });
     }
   }, [subProductId]);
+  //bread crumes 
+  useEffect(() => {
+    const pathnames = location.pathname.split("/").filter((x) => x); // Remove empty strings
+    const breadcrumbArray = pathnames.map((value, index) => ({
+      name: decodeURIComponent(value.replace(/-/g, " ")), // Convert hyphens to spaces
+      url: `/${pathnames.slice(0, index + 1).join("/")}`,
+    }));
+
+    // Add "Home" at the start
+    setBreadcrumb([{ name: "Home", url: "/" }, ...breadcrumbArray]);
+  }, [location]);
 
 const seoInfo =
-  seoData.find((seo) => seo.id === subProductId)?.seoInfo?.[0] ?? "Not Found";
-
+  seoData.find((seo) => seo.id === subProductId)?.seoInfo?.[0] ?? "Not Found"; 
 
   return (
     <div className="productContainer">
@@ -46,10 +58,10 @@ const seoInfo =
         description={seoInfo.description}
         keywords={seoInfo.keywords}
         siteName={seoInfo.siteName}
-        image={filteredSubProducts.productImg}
-        url={seoInfo.url}
+        image={product.subProducts[0]?.productImg}
+        // url={seoInfo.url}
         product={seoInfo.product}
-        breadcrumb={seoInfo.breadcrumb}
+        breadcrumb={breadcrumb}
         faqs={seoInfo.faqs}
       />
       <motion.div
@@ -58,7 +70,13 @@ const seoInfo =
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <h2 style={{ textTransform: "capitalize", color: "rgb(14, 51, 108)", fontSize:'30px' }}>
+        <h2
+          style={{
+            textTransform: "capitalize",
+            color: "rgb(14, 51, 108)",
+            fontSize: "30px",
+          }}
+        >
           {product.name}
         </h2>
       </motion.div>

@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Form from "../../Components/Form/Form";
 import PopupModal from "../../Components/Form/popup/PopupModal";
 import { useCall } from "../../global/CallContext";
+import SEO from "../../Components/SEO/SEO";
 const ContactUs = () => {
   // const [showPopup, setShowPopup] = useState(false);
   const [loading, setLoading] = useState(null); // Track loading state per number
@@ -39,6 +40,20 @@ const ContactUs = () => {
 
   return (
     <div className="contact-page">
+      <SEO
+        title="Contact Girish Ego Controls - Get in Touch for Enclosure Heaters & Thermostats"
+        description="Reach out to Girish Ego Controls for high-quality enclosure heaters, panel heaters, industrial heating solutions, and thermostats. Contact us in Mumbai, India."
+        keywords="Contact Girish Ego Controls, Enclosure Heaters Manufacturer, Panel Heater Supplier, Industrial Heating Solutions, Thermostats for Electrical Panels, Mumbai Heating Solutions, Buy Industrial Heaters, India, Dubai, Russia"
+        siteName="Girish Ego Controls"
+        url="https://yourwebsite.com/contact-us"
+        locale="en_IN"
+        organization="Girish Ego Controls"
+        breadcrumb={[
+          { name: "Home", url: "https://yourwebsite.com/" },
+          { name: "Contact Us", url: "https://yourwebsite.com/contact-us" },
+        ]}
+      />
+
       {/* Banner */}
       <div className="contact-banner"></div>
 

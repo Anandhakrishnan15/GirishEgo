@@ -10,16 +10,21 @@ import "./aboutus.css";
 import SEO from '../../Components/SEO/SEO';
 
 const AboutUs = () => {
+  
   return (
     <div>
       <SEO
-        title="About Us - Girish Ego Controls"
-        description="Learn more about Girish Ego Controls, our infrastructure, team, quality commitment, mission, and vision."
-        keywords="Girish Ego Controls, about us, infrastructure, team, mission, vision, quality assurance"
-        image="https://www.girishego.com/images/about-us.jpg"
+        title="About Girish Ego Controls - Leading Manufacturer of Enclosure Heaters & Thermostats"
+        description="Girish Ego Controls, a trusted manufacturer of enclosure heaters, panel heaters, and industrial thermostats, delivers high-quality heating solutions since 1982."
+        keywords="Enclosure Heaters, Panel Heaters, Industrial Heaters, Thermostats for Enclosures, DIN Rail Thermostats, Stem Type Thermostats, Electrical Panel Accessories, Industrial Heating Solutions"
         siteName="Girish Ego Controls"
-        twitterHandle="@GirishEgo"
+        url="https://yourwebsite.com/about-us"
+        breadcrumb={[
+          { name: "Home", url: "http://localhost:5173/" },
+          { name: "About-Us", url: "http://localhost:5173/About-us" },
+        ]}
       />
+
       <div className="sectionWrapper">
         <WhoWeAre data={aboutData.whoWeAre[0]} />
       </div>
