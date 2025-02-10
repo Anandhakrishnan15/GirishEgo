@@ -4,6 +4,8 @@ import { useLocation } from "react-router-dom";
 import defaultImage from "/catalogs/GEC New Catalog 04 02 2025AA-pages-1.jpg"; // Fallback image
 import defaultLogo from "../../assets/images/GEC Logo png.png"; // Fallback logo
 
+
+
 const SEO = ({
   title,
   description,
@@ -11,16 +13,18 @@ const SEO = ({
   image,
   siteName,
   twitterHandle,
-  locale = "en_US",
+  locale = "en_IN", // Focus on Indian locale, change as needed
   organization = "Girish Ego Controls",
-  phone = "+91-XXXXXXXXXX",
+  phone = ["+91 22 22068032", "+91 22 22083857"], // Multiple contact numbers
+  email = ["sales@girishego.com", "info@girishego.com"], // Emails added
   address = {
-    street: "Your Street, City, State",
-    locality: "Your City",
-    region: "Your State",
-    postalCode: "Your ZIP",
-    country: "Your Country",
+    street: "31, Tavawala Building, 147, Lohar Chawl, Kalbadevi",
+    locality: "Mumbai",
+    region: "Maharashtra",
+    postalCode: "400002",
+    country: "India",
   },
+  locations = ["India", "Dubai", "Russia"], // Targeting these regions
   faqs = [], // Added FAQs
   product = null, // Added Product schema
   breadcrumb = [], // Added Breadcrumb schema
@@ -46,12 +50,20 @@ const SEO = ({
       addressRegion: address.region,
       postalCode: address.postalCode,
       addressCountry: address.country,
+      email: email,
+      sameAs: [
+        // "https://www.linkedin.com/company/girishego",
+        // "https://twitter.com/girishego",
+      ],
     },
-    contactPoint: {
+
+    contactPoint: phone.map((num) => ({
       "@type": "ContactPoint",
-      telephone: phone,
-      contactType: "Customer Support",
-    },
+      telephone: num,
+      contactType: "customer service",
+      areaServed: locations,
+      availableLanguage: ["English", "Hindi"],
+    })),
   };
 
   // ✅ FAQ Schema
