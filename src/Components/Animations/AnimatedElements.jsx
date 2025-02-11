@@ -103,7 +103,7 @@ const AnimatedElements = () => {
       {elements.map((el) => {
         const style = {
           top: el.top,
-          left: el.left,
+          left: el.left,      
           transition: "transform 2s ease", // Smooth animation
         };
 
@@ -123,6 +123,8 @@ const AnimatedElements = () => {
               key={el.id}
               src={el.src}
               alt="Floating element"
+             
+          title= "Floating Design Element"
               className={`animated-img ${el.animation}`}
               style={style}
             />

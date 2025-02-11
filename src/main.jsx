@@ -4,13 +4,16 @@ import { BrowserRouter } from "react-router-dom"
 import "./index.css";
 import App from "./App.jsx";
 import { CallProvider } from "./global/CallContext.jsx";
+import { HelmetProvider } from "react-helmet-async";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <CallProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <HelmetProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </HelmetProvider>
     </CallProvider>
   </StrictMode>
 );

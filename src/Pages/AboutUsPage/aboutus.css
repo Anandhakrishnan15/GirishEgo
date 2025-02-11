@@ -12,6 +12,7 @@
   .team-subSection{
     margin:20px;
     p{
+     
       background: rgba(62, 167, 247, 0.322);
       padding: 20px;
     }
@@ -21,11 +22,15 @@
    ul{
     margin-top: 20px;
       margin-left:40px;
+      li{
+        padding: 20px;
+      }
      }
+
 
 }
 
-.about_us h2 {
+.about_us h2{
   font-size: 2rem;
   /* color: #333;*/
   margin-bottom: 30px;
@@ -36,6 +41,7 @@
 
 .about_us p {
   font-size: 1rem;
+  padding: 10px;
   line-height: 1.6;
   /* color: #555; */
 }
@@ -69,7 +75,7 @@ button:hover {
 .sectionWrapper {
   /* border:1px solid red; */
   padding: 20px 60px;
-  color: rgb(236, 219, 219); /* Adjust text color for better contrast */
+  color: rgb(255, 255, 255); /* Adjust text color for better contrast */
 }
 
 /* Odd sections: Dark blue background */
@@ -89,7 +95,7 @@ button:hover {
   color: #000; /* Adjust text color for better readability */
   .about_us{
     background-color: var(--lightblue);
-    h2{
+    h2,h1{
       border-bottom: 1px solid rgb(0, 0, 0);
     }
   }

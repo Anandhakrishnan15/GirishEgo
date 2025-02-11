@@ -44,10 +44,12 @@
 
 }
 
+
 .productHeader {
   width: 100%;
 
   h1,
+  h2,
   h3,
   h4 {
     text-align: center;
@@ -62,7 +64,8 @@
     color: var(--title-color)
   }
 
-  h4 {
+  h3 {
+   
     color: var(--subTital-color);
   }
 
@@ -206,6 +209,7 @@
   flex: 1; /* Make width dynamic */
   height: fit-content;
   min-width: 40%; /* Minimum width */
+  aspect-ratio: 0/0;
   }
 
   display: flex;

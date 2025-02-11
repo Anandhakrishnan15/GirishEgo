@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import './Navbar.css';
-import {Link, NavLink, useLocation} from 'react-router';
-import Products from '../../Data/Products';
+import React, { useEffect, useState } from "react";
+import "./Navbar.css";
+import { Link, NavLink, useLocation } from "react-router";
+import Products from "../../Data/Products";
 // import Res_Support from "./Pages/ResourcesPage/Res_Support"
 import Res_Support from "../../Data/Res_Support";
 
@@ -23,64 +23,25 @@ const Navbar = () => {
   const location = useLocation();
 
   // Check if the current route includes "/Products"
-  const isActive =location.pathname.includes("/Products");
+  const isActive = location.pathname.includes("/Products");
   const resisActive = location.pathname.includes("/Resources");
 
-      // useEffect(() => {
-      //   const handelScrolldata = () => {
-      //     //function which will update the scroll movementn and give it to the setscrollData state
-      //     setscrollData((prevState) => {
-      //       return {
-      //         y: window.scrollY,
-      //         lastY: prevState.y,
-      //       };
-      //     });
-      //   };
-      //   window.addEventListener("scroll", handelScrolldata);
-      //   return () => {
-      //     // cleanup function
-      //     window.removeEventListener("scroll", handelScrolldata);
-      //   };
-      // }, []);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setHammenuon(false);
+      }
+    };
 
-      //   useEffect(() => {
-      //     // over her we will use the conditonal operations and change the navbarvisibe
-      //     // console.log(scrollData);
-      //     if (scrollData.y > 20) {
-      //       setNavbarvisible(false);
-      //     } else {
-      //       setNavbarvisible(true);
-      //     }
-      //     if (scrollData.y < scrollData.lastY) {
-      //       // here if the last postion of the scroll is larger then hide
-      //       setNavbarvisible(true);
-      //       //if the user scroll back to then the the scroll bar will pop u again.
-      //     } else {
-      //       setNavbarvisible(false);
-      //       // and hide if the user scrolls down back again
-      //     }
-      // // this will make the dropdown disaper if the user scroll while the drop down was active
-      //     setDropdown(false);
-      //      setHammenuon(false)
+    window.addEventListener("resize", handleResize);
 
-      //     // update evertime the scrollData changes
-      //   }, [scrollData]);
-      useEffect(() => {
-        const handleResize = () => {
-          if (window.innerWidth >= 768) {
-            setHammenuon(false);
-          }
-        };
+    // Initial check in case the component is mounted after a resize
+    handleResize();
 
-        window.addEventListener("resize", handleResize);
-
-        // Initial check in case the component is mounted after a resize
-        handleResize();
-
-        return () => {
-          window.removeEventListener("resize", handleResize);
-        };
-      }, []);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const toggleSubProductVisibility = (productId) => {
     setVisibleSubProducts((prev) => ({
@@ -104,7 +65,12 @@ const Navbar = () => {
     >
       {/* here if the navBarViaibe is true then it will activate the show class from the css file else " " */}
       <div className="logo">
-        <img  src={Logo} alt="GirishEco_logo" />
+        <img
+          src={Logo}
+          alt="Girish Ego Controls Logo"
+          title="Girish Ego Controls"
+          loading="lazy"
+        />
       </div>
       <div
         className="ham-menu"
@@ -119,7 +85,13 @@ const Navbar = () => {
       <div className="icons">
         <ul className={hamenuon ? "open-hamListcontainer" : "navlistcontainer"}>
           <div className="sidebarLogo">
-            <img src={Logo2} alt="" style={{width:'50%'}} />
+            <img
+              src={Logo2}
+              alt="Girish Ego Controls Alternate Logo"
+              title="Girish Ego Controls"
+              loading="lazy"
+              style={{ width: "200px", height: "auto" }}
+            />
           </div>
           {hamenuon ? (
             <div>
@@ -197,7 +169,19 @@ const Navbar = () => {
                             onClick={handleLinkClick}
                             to={`/Products/${product.id}/${subProduct.id}`}
                           >
-                            {subProduct.title.toLowerCase()}
+                            {
+                              subProduct.title
+                                .toLowerCase() // Convert the whole title to lowercase
+                                .replace(/=(\w)/g, (_, char) =>
+                                  char.toUpperCase()
+                                ) // Remove hyphens & capitalize next letter
+                                .split(" ") // Split title into words
+                                .map(
+                                  (word) =>
+                                    word.charAt(0).toUpperCase() + word.slice(1)
+                                ) // Capitalize first letter of each word
+                                .join(" ") // Join words back into a string
+                            }
                           </NavLink>
                         </li>
                       ))}
@@ -220,7 +204,7 @@ const Navbar = () => {
               }`}
               onClick={() => setResDropdown(!resdropdown)}
             >
-              Resources/Support
+              Resources/Downloads
               <span
                 className={`resorceDropDownArrow ${
                   resdropdown ? "resarrowrotate" : ""
@@ -267,6 +251,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

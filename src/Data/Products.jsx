@@ -56,11 +56,9 @@ import FanH5 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (5).p
 import FanH6 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (6).png";
 import FanH7 from "../assets/Images/ptoductsImg/fanheatersimags/fanheaters (7).png";
 // stem heatrs imaga import
-import stem1 from "../assets/Images/ptoductsImg/semithermoimages/SH (2).png";
-import stem2 from "../assets/Images/ptoductsImg/semithermoimages/SH (1).png";
-import stem3 from "../assets/Images/ptoductsImg/semithermoimages/SH (3).png";
-import stem4 from "../assets/Images/ptoductsImg/semithermoimages/SH (4).png";
-import stem5 from "../assets/Images/ptoductsImg/semithermoimages/SH (5).png";
+import stem1 from "../assets/Images/ptoductsImg/semithermoimages/SH (7).jpeg";
+import stem4 from "../assets/Images/ptoductsImg/semithermoimages/SH (1).png";
+import stem5 from "../assets/Images/ptoductsImg/semithermoimages/SH (2).png";
 
 
 // round termal heaters
@@ -471,8 +469,8 @@ const Products = [
       },
       //fan heaters data
       {
-        id: "Space-Saveing-Fan-Heaters",
-        title: "SPACE-SAVEING FAN HEATERS ",
+        id: "Space-Saving-Fan-Heaters",
+        title: "SPACE-SAVING FAN HEATERS ",
         productImg: FanH1,
         application: "with COVER FOR CONTINUOUS USE ",
         models: ["HV 031/HVL 031 100W-400W "],
@@ -565,7 +563,7 @@ const Products = [
         recommendation: "",
         otherImages: [CHPFH2, CHPFH4, CHPFH3, CHPFH5, CHPFH6],
       },
-      // small semi =conductor heater
+      // small semi conductor heater
       {
         id: "SMALL-SEMICONDUCTOR-HEATER",
         title: "SMALL SEMICONDUCTOR HEATER",
@@ -680,7 +678,7 @@ const Products = [
       {
         id: "Stem-Thermostat",
         title: "STEM THERMOSTAT",
-        productImg: stem4,
+        productImg: stem1,
         application: "For Panel Boards & Switchgear Industries",
         models: ["200 series", "300 series", "400series", "GEC", "GEO", "TCO"],
         featuresH: "Also Available",
@@ -712,7 +710,7 @@ const Products = [
         ],
         remark: "",
         recommendation: "",
-        otherImages: [stem3, stem1, stem5, stem2],
+        otherImages: [stem4, stem5],
       },
       //ENCLOSURE-THERMOSTAT
       {
@@ -1109,7 +1107,7 @@ const Products = [
     id: "Accessories",
     name: "Accessories",
     subProducts: [
-      // Hazardous Area Thermostat
+      // PRESSURE-COMPENSATION-DEVICE
       {
         id: "PRESSURE-COMPENSATION-DEVICE",
         title: "PRESSURE COMPENSATION DEVICE",
@@ -1202,12 +1200,7 @@ const Products = [
         description:
           "T5 Fluorescent Cabinet Lamp offering high brightness, long service life, energy saving, and reliable operation at low voltage.",
         workingH: "",
-        workingDetails: [
-          // "T5 Fluorescent Cabinet Lamp",
-          // "High brightness, small size with on/off switch ",
-          // "Long service life non flicker & can start by low voltage",
-          // "Energy Saving with Opal Cover, Or with Striate Cover",
-        ],
+        workingDetails: [],
         construtionH: "",
         constrution: [],
         tests: [],
