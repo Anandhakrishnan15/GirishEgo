@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./contact.css";
 import CRS from "../../assets/Images/contact-Us-page/contact-us page-CS-image.webp";
-import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Form from "../../Components/Form/Form";
-import PopupModal from "../../Components/Form/popup/PopupModal";
 import { useCall } from "../../global/CallContext";
 import SEO from "../../Components/SEO/SEO";
 const ContactUs = () => {

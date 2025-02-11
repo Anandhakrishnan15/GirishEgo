@@ -18,10 +18,10 @@ const AboutUs = () => {
         description="Girish Ego Controls, a trusted manufacturer of enclosure heaters, panel heaters, and industrial thermostats, delivers high-quality heating solutions since 1982."
         keywords="Enclosure Heaters, Panel Heaters, Industrial Heaters, Thermostats for Enclosures, DIN Rail Thermostats, Stem Type Thermostats, Electrical Panel Accessories, Industrial Heating Solutions"
         siteName="Girish Ego Controls"
-        url="https://yourwebsite.com/about-us"
+        url="https://https://girishego.com/about-us"
         breadcrumb={[
-          { name: "Home", url: "http://localhost:5173/" },
-          { name: "About-Us", url: "http://localhost:5173/About-us" },
+          { name: "Home", url: "https://girishego.com/" },
+          { name: "About-Us", url: "https://girishego.com/About-us" },
         ]}
       />
 
