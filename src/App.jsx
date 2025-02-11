@@ -17,7 +17,6 @@ import PanelSpaceHeatersCalculator from "./Pages/ResourcesPage/ResourcespagesCom
 // import CatDownload from "./Pages/ResourcesPage/ResourcespagesComponents/download-catalog/downloadCatalog";
 import PDFPreview from "./Pages/ResourcesPage/ResourcespagesComponents/download-catalog/downloadCatalog";
 import WhatsAppButton from "./Components/whatsappButton/WhatsAppButton";
-import Loader from "./Components/loader/Loader";
 import Erroe404 from "./Pages/404/Erroe404";
 // import contactDetails from "./Components/Pages/ContactUsPage/contactDetails";
 
